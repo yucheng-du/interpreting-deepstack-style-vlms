@@ -1,0 +1,24 @@
+{
+ "protocol_sha256": "699af88a2930ed83a85bcb48b54020df188a2b8e4887f8926dd9cfb1352bea65",
+ "confirm_units": {
+  "docvqa": {
+   "path": "units/confirm-docvqa.txt",
+   "sha256": "7ec11d3a2dfa1e026a6949228b65c1c41af8247890bc355e08b58fa872c23060",
+   "n_units": 474
+  },
+  "gqa-attribute": {
+   "path": "units/confirm-gqa-attribute.txt",
+   "sha256": "0113fc9528c69fc245752ba40e8848f6e1ba6ad7ad17ec12dc408c068ffdeb40",
+   "n_units": 1000
+  },
+  "gqa-spatial": {
+   "path": "units/confirm-gqa-spatial.txt",
+   "sha256": "fde4657355ef0d675c4e49542fcd74199b13dab06e6ab510b72c24b60f953457",
+   "n_units": 1000
+  }
+ },
+ "lock_sha256": "7c2f789fab2de3071e791f8cfec636bf3b1b6a5cb3a0a6cbcabd50783ff77a0a",
+ "description": "Portable reproduction copy with membership stored as sorted unit IDs. The archived protocol referenced the original full manifests.",
+ "original_protocol_sha256": "510c7ed7f4e72aa51974562e5f4c4fccd7a1916507feefc875c9ec2abdf05608",
+ "original_lock_sha256": "c396db5fda8e766199820f036e8c93bda566db150b85e32698cac67aa2916744"
+}

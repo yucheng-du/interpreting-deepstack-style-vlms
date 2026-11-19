@@ -1,0 +1,515 @@
+{
+  "seed": 2026100507,
+  "splits": [
+    "train",
+    "val"
+  ],
+  "basic_colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "orange",
+    "pink",
+    "purple",
+    "white",
+    "black",
+    "gray",
+    "grey",
+    "brown",
+    "silver",
+    "gold",
+    "tan",
+    "beige",
+    "maroon",
+    "navy",
+    "teal",
+    "turquoise",
+    "cream",
+    "khaki",
+    "blond"
+  ],
+  "categories": {
+    "car": {
+      "group": "vehicle",
+      "synonyms": [
+        "car",
+        "cars",
+        "taxi",
+        "cab",
+        "suv",
+        "sedan",
+        "minivan",
+        "jeep",
+        "van"
+      ],
+      "context_exclude": [
+        "train",
+        "trains",
+        "locomotive",
+        "railroad",
+        "railway",
+        "tracks",
+        "track",
+        "train tracks",
+        "railroad tracks",
+        "platform",
+        "train car",
+        "train station"
+      ],
+      "occlusion_check": true
+    },
+    "bus": {
+      "group": "vehicle",
+      "synonyms": [
+        "bus",
+        "buses",
+        "double decker",
+        "double decker bus",
+        "school bus",
+        "city bus"
+      ],
+      "context_exclude": [],
+      "occlusion_check": true
+    },
+    "truck": {
+      "group": "vehicle",
+      "synonyms": [
+        "truck",
+        "trucks",
+        "pickup truck",
+        "pickup",
+        "fire truck",
+        "dump truck",
+        "semi"
+      ],
+      "context_exclude": [],
+      "occlusion_check": true
+    },
+    "train": {
+      "group": "vehicle",
+      "synonyms": [
+        "train",
+        "trains",
+        "locomotive",
+        "engine",
+        "train car",
+        "passenger train",
+        "subway"
+      ],
+      "context_exclude": [],
+      "occlusion_check": true
+    },
+    "boat": {
+      "group": "vehicle",
+      "synonyms": [
+        "boat",
+        "boats",
+        "sailboat",
+        "ship",
+        "canoe",
+        "kayak",
+        "ferry"
+      ],
+      "context_exclude": [],
+      "occlusion_check": true
+    },
+    "umbrella": {
+      "group": "object",
+      "synonyms": [
+        "umbrella",
+        "umbrellas",
+        "parasol"
+      ],
+      "context_exclude": [],
+      "occlusion_check": false
+    },
+    "chair": {
+      "group": "object",
+      "synonyms": [
+        "chair",
+        "chairs",
+        "armchair"
+      ],
+      "context_exclude": [],
+      "occlusion_check": true
+    },
+    "kite": {
+      "group": "object",
+      "synonyms": [
+        "kite",
+        "kites"
+      ],
+      "context_exclude": [],
+      "occlusion_check": false
+    },
+    "bag": {
+      "group": "object",
+      "synonyms": [
+        "bag",
+        "bags",
+        "handbag",
+        "purse"
+      ],
+      "context_exclude": [],
+      "occlusion_check": false
+    },
+    "helmet": {
+      "group": "object",
+      "synonyms": [
+        "helmet",
+        "helmets"
+      ],
+      "context_exclude": [],
+      "occlusion_check": false
+    },
+    "pillow": {
+      "group": "object",
+      "synonyms": [
+        "pillow",
+        "pillows",
+        "cushion"
+      ],
+      "context_exclude": [],
+      "occlusion_check": false
+    }
+  },
+  "category_pairs": [
+    [
+      "car",
+      "umbrella"
+    ],
+    [
+      "car",
+      "bag"
+    ],
+    [
+      "bus",
+      "chair"
+    ],
+    [
+      "bus",
+      "umbrella"
+    ],
+    [
+      "truck",
+      "pillow"
+    ],
+    [
+      "truck",
+      "chair"
+    ],
+    [
+      "train",
+      "bag"
+    ],
+    [
+      "train",
+      "pillow"
+    ]
+  ],
+  "color_pairs": [
+    [
+      "red",
+      "blue"
+    ]
+  ],
+  "quads_per_stratum": 4,
+  "pool_per_cell": 80,
+  "spare_per_cell": 3,
+  "max_crop_uses": 1,
+  "max_image_uses": 1,
+  "annotation": {
+    "min_side": 40,
+    "min_long_side": 80,
+    "max_aspect": 3.0,
+    "border_margin": 2,
+    "duplicate_iou": 0.5,
+    "other_instance_crop_frac": 0.15,
+    "occlusion_max": 0.5,
+    "occluder_names": [
+      "man",
+      "woman",
+      "person",
+      "people",
+      "boy",
+      "girl",
+      "child",
+      "kid",
+      "lady",
+      "guy",
+      "player",
+      "skier",
+      "surfer",
+      "skateboarder",
+      "snowboarder",
+      "rider",
+      "driver",
+      "passenger",
+      "pedestrian",
+      "men",
+      "women",
+      "children",
+      "kids",
+      "crowd",
+      "tourist",
+      "officer",
+      "worker",
+      "motorcyclist",
+      "biker",
+      "cyclist",
+      "spectator",
+      "spectators",
+      "family",
+      "baby",
+      "toddler",
+      "couple",
+      "policeman",
+      "police officer",
+      "soldier",
+      "student",
+      "horse",
+      "horses",
+      "dog",
+      "dogs",
+      "cow",
+      "cows",
+      "elephant",
+      "giraffe",
+      "zebra",
+      "sheep",
+      "cat",
+      "bird",
+      "bear"
+    ]
+  },
+  "pixel_check": {
+    "central_frac": 0.5,
+    "s_min": 0.35,
+    "v_min": 0.2,
+    "min_frac": 0.2,
+    "ratio": 3.0,
+    "margin": 0.1,
+    "crop_rival_max": 0.1,
+    "bbox_plurality": true,
+    "hue_bins": {
+      "red": [
+        [
+          0,
+          15
+        ],
+        [
+          340,
+          360
+        ]
+      ],
+      "orange": [
+        [
+          15,
+          40
+        ]
+      ],
+      "yellow": [
+        [
+          40,
+          70
+        ]
+      ],
+      "green": [
+        [
+          70,
+          170
+        ]
+      ],
+      "blue": [
+        [
+          195,
+          265
+        ]
+      ],
+      "purple": [
+        [
+          265,
+          300
+        ]
+      ],
+      "pink": [
+        [
+          300,
+          340
+        ]
+      ]
+    }
+  },
+  "canvas": {
+    "size": [
+      384,
+      256
+    ],
+    "box": 160,
+    "background": 224,
+    "context_margin": 0.08
+  },
+  "strengths": [
+    0,
+    2,
+    8,
+    25,
+    100
+  ],
+  "manual_exclusions": {
+    "2343056/927762": "visual review C1: suspended-railway carriage labelled car, not an automobile",
+    "2390689/1248070": "visual review C2: bus body is yellow; blue is only the windshield",
+    "712993/1577239": "visual review C2: chair is light gray; the blue is a draped jacket",
+    "2383150/534752": "visual review C1: dark red fabric close-up, chair not recognizable",
+    "1159787/1597623": "visual review C1: blurry red fabric close-up, chair not recognizable",
+    "2361301/2398971": "visual review C1/C2: blue region is clothing; pillow not visible",
+    "2368877/2223916": "visual review C1: red plastic bag worn on a head reads as a cap",
+    "2412584/3804088": "visual review C1: patterned fabric with a person; bag not recognizable",
+    "2408683/649628": "visual review C1: red loveseat/sofa labelled chair",
+    "2356237/822458": "visual review C1: blurred partial chair back at the image border; chair barely recognizable",
+    "150406/4393448": "visual review C1/C2: blurred stool seat behind blue bars; chair not recognizable, blue on the object",
+    "2324419/4080449": "visual review C1: red fabric close-up, chair not recognizable",
+    "2361276/2189688": "visual review C1: dark partial chair back, not recognizable",
+    "2389607/503846": "visual review C1: red fabric under a cat, chair not recognizable"
+  },
+  "visual_review": {
+    "criteria": {
+      "C1": "the tile shows a recognizable instance of the named category (not only a texture or part)",
+      "C2": "the named color is the object's dominant chromatic color (not trim, a windshield or a draped item)"
+    },
+    "reviewed_selected": [
+      "1159419-1593095",
+      "1159610-1077256",
+      "150294-1038050",
+      "1591846-4243253",
+      "1592000-1605747",
+      "1592028-1605958",
+      "1592325-4270279",
+      "1592362-1608793",
+      "1592672-1611407",
+      "1593019-4458650",
+      "1593222-2534331",
+      "2174-1646731",
+      "2315837-2955662",
+      "2315969-3115773",
+      "2316439-2708551",
+      "2317577-1019584",
+      "2317865-2858675",
+      "2317996-1015391",
+      "2320164-995529",
+      "2320241-994843",
+      "2321580-1047581",
+      "2322033-2993800",
+      "2322705-3273844",
+      "2324015-4090075",
+      "2325399-3364272",
+      "2325975-3302914",
+      "2327305-980634",
+      "2331757-3164367",
+      "2334073-2941611",
+      "2334847-2287510",
+      "2335923-2231856",
+      "2336697-4612376",
+      "2336788-3430438",
+      "2337904-4601296",
+      "2339755-2979519",
+      "2341759-3053295",
+      "2342009-3500108",
+      "2342191-936220",
+      "2343054-927780",
+      "2344291-916484",
+      "2344556-3019087",
+      "2345010-911340",
+      "2345312-3329425",
+      "2347304-3315690",
+      "2348088-1887108",
+      "2350760-3260633",
+      "2354956-2401729",
+      "2356800-2172457",
+      "2360178-3762522",
+      "2360368-2016129",
+      "2363090-768370",
+      "2363910-761145",
+      "2364384-1776325",
+      "2365633-2424607",
+      "2366436-628311",
+      "2366491-3432333",
+      "2368981-614602",
+      "2370329-2027163",
+      "2370376-2016042",
+      "2370539-741641",
+      "2371409-2723164",
+      "2373535-1932240",
+      "2373791-2217424",
+      "2374254-3062644",
+      "2374714-725383",
+      "2377361-565970",
+      "2377776-3675071",
+      "2380622-1344484",
+      "2380885-543226",
+      "2380902-708509",
+      "2382462-1328540",
+      "2382521-696719",
+      "2382870-4542931",
+      "2385147-3846225",
+      "2385843-1292399",
+      "2386149-683606",
+      "2387274-1277523",
+      "2387638-677484",
+      "2387929-676453",
+      "2389020-4504488",
+      "2389320-1262091",
+      "2389462-1260664",
+      "2390315-498792",
+      "2391752-486448",
+      "2393785-1216974",
+      "2393842-469420",
+      "2394221-1213155",
+      "2396382-1198366",
+      "2396918-439302",
+      "2397723-431324",
+      "2398306-1180921",
+      "2399326-417132",
+      "2400096-411522",
+      "2402047-393285",
+      "2402160-392226",
+      "2405940-327803",
+      "2406967-367834",
+      "2408028-269586",
+      "2409216-3808132",
+      "2409241-245956",
+      "2410295-1619360",
+      "2410323-220445",
+      "2410954-318441",
+      "2411268-314242",
+      "2411540-310346",
+      "2412283-198244",
+      "2413521-171965",
+      "2415182-144330",
+      "2415792-4504975",
+      "2417794-3021392",
+      "285602-4396994",
+      "285841-4604668",
+      "3298-1651603",
+      "3333-1553743",
+      "3396-1652230",
+      "3481-1554456",
+      "3484-1070208",
+      "460-1027718",
+      "4609-1072031",
+      "498157-4421227",
+      "611-1064384",
+      "61566-1037335",
+      "713132-1579317",
+      "713259-2883642",
+      "713428-1583755",
+      "713454-1583993",
+      "713558-1585831",
+      "767-4301035"
+    ]
+  },
+  "native_panel": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "strengths": [
+    0,
+    8
+  ],
+  "include_blank": false,
+  "response_formats": [
+    "label",
+    "direct"
+  ],
+  "generation_groups": [
+    0,
+    1
+  ],
+  "generate_native": true,
+  "generate_strengths": [
+    0,
+    8
+  ],
+  "generate_blank": false
+}

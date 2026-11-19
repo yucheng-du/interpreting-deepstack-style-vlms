@@ -1,0 +1,13 @@
+{
+  "execution_version": "v14-granite-new-material-marginal-batched-1",
+  "families": ["custom"],
+  "conditions": [
+    {"name":"new_complement_15_18", "family":"custom", "main_source":"a", "later_base":"a", "later_donor":"b", "t":1.0, "k":1.0, "entries":["layer15","layer18"], "region":"roi"},
+    {"name":"new_joint_15_18_21", "family":"custom", "main_source":"a", "later_base":"a", "later_donor":"b", "t":1.0, "k":1.0, "entries":["layer15","layer18","layer21"], "region":"roi"}
+  ],
+  "comparisons": [
+    {"name":"M21_given_15_18", "positive":"new_joint_15_18_21", "negative":"new_complement_15_18", "meaning":"Conditional marginal of adding 21; entries 15 and 18 keep exactly the same increments and k. New materials only."}
+  ],
+  "batch_conditions": true,
+  "cross_query_cache": true
+}

@@ -1,0 +1,853 @@
+{
+ "name": "v19-confirm",
+ "version": "confirm-2026-11-13a",
+ "_portable_copy": "This copy stores membership as unit IDs. The accompanying lock records the archived protocol and lock digests.",
+ "pending": [],
+ "tasks": {
+  "gqa-attribute": {
+   "aliases": [
+    "gqa_attribute"
+   ],
+   "score_field": "correct",
+   "metric": "gqa_case_punct_normalized|invalid_as_zero",
+   "unit_field": "unit_id",
+   "tolerance": 0.02,
+   "_metric_note": "Accuracy: lowercase, strip, drop trailing .!? and surrounding quotes, then equality with any reference; invalid outputs score 0 (common.score)."
+  },
+  "gqa-spatial": {
+   "aliases": [
+    "gqa_spatial"
+   ],
+   "score_field": "correct",
+   "metric": "gqa_case_punct_normalized|invalid_as_zero",
+   "unit_field": "unit_id",
+   "tolerance": 0.02
+  },
+  "docvqa": {
+   "aliases": [
+    "docvqa_document_qa"
+   ],
+   "score_field": "correct",
+   "secondary_field": "anls_strict",
+   "metric": "docvqa_anls_organizer_framework|invalid_as_zero",
+   "unit_field": "cluster_id",
+   "tolerance": 0.02,
+   "_metric_note": "ANLS as in the v19 local stage (common.score 'correct'): organizer framework (MP-DocVQA metrics.py): lower+strip, max over references of 1 - Levenshtein/max(len), kept when >= .5 else 0; empty or 'none' = 0; invalid outputs 0. The strict-paper cutoff (> .5) is the secondary field anls_strict. The paper's image-degradation shares used the strict cutoff."
+  }
+ },
+ "bootstrap": {
+  "n_boot": 4000,
+  "seed": 20261112,
+  "ci": 0.95,
+  "_unit": "tasks.*.unit_field: GQA image (unit_id), DocVQA document (cluster_id)"
+ },
+ "units": {
+  "match_field": "unit_id",
+  "_about": "A task's calibration / dev_test list replaces the split labels when its path is set. Confirm mode takes the test units only from units.confirm. Files: .txt one id per line, .json list, or .jsonl rows with match_field.",
+  "split_labels": {
+   "calibration": [
+    "calibration"
+   ],
+   "test": [
+    "evaluation"
+   ]
+  },
+  "_confirm_calibration": "Calibration uses the 240 development units per task. The confirmation lists contain 1,000 GQA attribute images, 1,000 GQA spatial images and 474 DocVQA documents.",
+  "calibration": {
+   "gqa-attribute": {
+    "path": "units/legacy-gqa-attribute.txt",
+    "sha256": "91daf8d5390799d60da9f8cbcef196d741bd15fbeeec485e5b27ce4356d3b8cf"
+   },
+   "gqa-spatial": {
+    "path": "units/legacy-gqa-spatial.txt",
+    "sha256": "24cd2771e8d2505a4ccd23b127575aa6087d6062ecba097544a2d5179c9ccd8e"
+   },
+   "docvqa": {
+    "path": "units/legacy-docvqa.txt",
+    "sha256": "0cb75f9ac9e5811de80a5e33909323eecd27c49eb815657f0adf2393aa069212"
+   }
+  },
+  "dev_test": {},
+  "confirm": {
+   "gqa-attribute": {
+    "path": "units/confirm-gqa-attribute.txt",
+    "sha256": "0113fc9528c69fc245752ba40e8848f6e1ba6ad7ad17ec12dc408c068ffdeb40"
+   },
+   "gqa-spatial": {
+    "path": "units/confirm-gqa-spatial.txt",
+    "sha256": "fde4657355ef0d675c4e49542fcd74199b13dab06e6ab510b72c24b60f953457"
+   },
+   "docvqa": {
+    "path": "units/confirm-docvqa.txt",
+    "sha256": "7ec11d3a2dfa1e026a6949228b65c1c41af8247890bc355e08b58fa872c23060"
+   }
+  }
+ },
+ "cells": {
+  "qwen8b": {
+   "gqa-attribute": {
+    "type": "main",
+    "endpoints": [
+     {
+      "config": "C|Z",
+      "max_loss_frac_of_JZ": 0.25,
+      "source": "prediction 2"
+     }
+    ]
+   },
+   "gqa-spatial": {
+    "type": "main",
+    "endpoints": [
+     {
+      "config": "C|Z",
+      "max_loss_frac_of_JZ": 0.25,
+      "source": "prediction 2"
+     }
+    ]
+   },
+   "docvqa": {
+    "type": "main",
+    "endpoints": [
+     {
+      "config": "C|Z",
+      "max_loss_frac_of_JZ": 0.25,
+      "source": "prediction 2"
+     }
+    ],
+    "family_overrides": {
+     "R": {
+      "configs": [
+       "q-2|k+2",
+       "q0|k+2",
+       "q0|k+4",
+       "q2|k+2",
+       "q2|k+4",
+       "q4|k+2"
+      ]
+     },
+     "A": {
+      "configs": [
+       "q-2|k-2",
+       "q0|k-2",
+       "q0|k-4",
+       "q2|k-2",
+       "q2|k-4",
+       "q4|k-2"
+      ]
+     }
+    }
+   }
+  },
+  "qwen32b": {
+   "gqa-attribute": "interaction",
+   "gqa-spatial": "none",
+   "docvqa": "main"
+  },
+  "ibm4b": {
+   "gqa-attribute": {
+    "type": "later",
+    "endpoints": [
+     {
+      "config": "Z|C",
+      "max_loss_frac_of_JZ": 0.25,
+      "source": "prediction 2"
+     }
+    ]
+   },
+   "gqa-spatial": "none",
+   "docvqa": "none"
+  },
+  "deepstack7b": {
+   "gqa-attribute": "interaction",
+   "gqa-spatial": "interaction",
+   "docvqa": {
+    "type": "later",
+    "family_overrides": {
+     "S": {
+      "form": "shared",
+      "qs": [
+       -6,
+       -4,
+       -2,
+       -1,
+       0,
+       2
+      ]
+     },
+     "N": {
+      "form": "offset",
+      "qs": [
+       -6,
+       -4,
+       -2,
+       -1,
+       0,
+       2
+      ],
+      "ks": [
+       0
+      ]
+     },
+     "R": {
+      "configs": [
+       "q-6|k-2",
+       "q-2|k-2",
+       "q-2|k-4",
+       "q0|k-2",
+       "q4|k-2",
+       "q4|k-4"
+      ]
+     },
+     "A": {
+      "configs": [
+       "q-6|k+2",
+       "q-2|k+2",
+       "q-2|k+4",
+       "q0|k+2",
+       "q4|k+2",
+       "q4|k+4"
+      ]
+     }
+    }
+   }
+  }
+ },
+ "cell_types": {
+  "main": {
+   "role": 1,
+   "families": [
+    "S",
+    "N",
+    "R",
+    "A"
+   ],
+   "comparisons": [
+    {
+     "a": "R",
+     "b": "A",
+     "predicted": "a>b",
+     "label": true
+    },
+    {
+     "a": "R",
+     "b": "N"
+    },
+    {
+     "a": "R",
+     "b": "S"
+    }
+   ],
+   "endpoints": []
+  },
+  "later": {
+   "role": -1,
+   "families": [
+    "S",
+    "N",
+    "R",
+    "A"
+   ],
+   "comparisons": [
+    {
+     "a": "R",
+     "b": "A",
+     "predicted": "a>b",
+     "label": true
+    },
+    {
+     "a": "R",
+     "b": "N"
+    },
+    {
+     "a": "R",
+     "b": "S"
+    }
+   ],
+   "endpoints": []
+  },
+  "interaction": {
+   "role": null,
+   "families": [
+    "S",
+    "N",
+    "Kpos",
+    "Kneg"
+   ],
+   "comparisons": [
+    {
+     "a": "Kpos",
+     "b": "Kneg"
+    },
+    {
+     "a": "Kpos",
+     "b": "N"
+    },
+    {
+     "a": "Kneg",
+     "b": "N"
+    },
+    {
+     "a": "Kpos",
+     "b": "S"
+    },
+    {
+     "a": "Kneg",
+     "b": "S"
+    }
+   ],
+   "endpoints": [
+    {
+     "config": "C|Z",
+     "max_loss_frac_of_JZ": 0.5,
+     "source": "interaction endpoint test (threshold of prediction 2)"
+    },
+    {
+     "config": "Z|C",
+     "max_loss_frac_of_JZ": 0.5,
+     "source": "interaction endpoint test (threshold of prediction 2)"
+    }
+   ]
+  },
+  "none": {
+   "role": null,
+   "describe_only": true,
+   "families": [
+    "S",
+    "N",
+    "Kpos",
+    "Kneg"
+   ],
+   "comparisons": [
+    {
+     "a": "Kpos",
+     "b": "Kneg"
+    },
+    {
+     "a": "Kpos",
+     "b": "N"
+    },
+    {
+     "a": "Kneg",
+     "b": "N"
+    },
+    {
+     "a": "Kpos",
+     "b": "S"
+    },
+    {
+     "a": "Kneg",
+     "b": "S"
+    }
+   ],
+   "endpoints": []
+  }
+ },
+ "family_defaults": {
+  "S": {
+   "form": "shared",
+   "qs": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+   ]
+  },
+  "N": {
+   "form": "offset",
+   "qs": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+   ],
+   "ks": [
+    0
+   ]
+  },
+  "R": {
+   "form": "offset",
+   "qs": [
+    0,
+    4,
+    8
+   ],
+   "abs_ks": [
+    2,
+    4
+   ],
+   "sign": "role"
+  },
+  "A": {
+   "form": "offset",
+   "qs": [
+    0,
+    4,
+    8
+   ],
+   "abs_ks": [
+    2,
+    4
+   ],
+   "sign": "anti"
+  },
+  "Kpos": {
+   "form": "offset",
+   "qs": [
+    0,
+    4,
+    8
+   ],
+   "ks": [
+    2,
+    4
+   ]
+  },
+  "Kneg": {
+   "form": "offset",
+   "qs": [
+    0,
+    4,
+    8
+   ],
+   "ks": [
+    -2,
+    -4
+   ]
+  }
+ },
+ "models": {
+  "qwen8b": {
+   "main_key": "main",
+   "families": {
+    "S": {
+     "form": "shared",
+     "qs": [
+      -4,
+      0,
+      2,
+      4,
+      6,
+      8
+     ]
+    },
+    "N": {
+     "form": "offset",
+     "qs": [
+      -4,
+      0,
+      2,
+      4,
+      6,
+      8
+     ],
+     "ks": [
+      0
+     ]
+    },
+    "R": {
+     "form": "offset",
+     "qs": [
+      2,
+      6,
+      10
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "role"
+    },
+    "A": {
+     "form": "offset",
+     "qs": [
+      2,
+      6,
+      10
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "anti"
+    },
+    "Kpos": {
+     "form": "offset",
+     "qs": [
+      2,
+      6,
+      10
+     ],
+     "ks": [
+      2,
+      4
+     ]
+    },
+    "Kneg": {
+     "form": "offset",
+     "qs": [
+      2,
+      6,
+      10
+     ],
+     "ks": [
+      -2,
+      -4
+     ]
+    }
+   }
+  },
+  "qwen32b": {
+   "main_key": "main",
+   "families": {
+    "S": {
+     "form": "shared",
+     "qs": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+     ]
+    },
+    "N": {
+     "form": "offset",
+     "qs": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+     ],
+     "ks": [
+      0
+     ]
+    },
+    "R": {
+     "form": "offset",
+     "qs": [
+      8,
+      12,
+      16
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "role"
+    },
+    "A": {
+     "form": "offset",
+     "qs": [
+      8,
+      12,
+      16
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "anti"
+    },
+    "Kpos": {
+     "form": "offset",
+     "qs": [
+      8,
+      12,
+      16
+     ],
+     "ks": [
+      2,
+      4
+     ]
+    },
+    "Kneg": {
+     "form": "offset",
+     "qs": [
+      8,
+      12,
+      16
+     ],
+     "ks": [
+      -2,
+      -4
+     ]
+    }
+   }
+  },
+  "ibm4b": {
+   "main_key": "layer0",
+   "families": {
+    "S": {
+     "form": "shared",
+     "qs": [
+      -12,
+      -8,
+      -4,
+      0,
+      4,
+      8
+     ]
+    },
+    "N": {
+     "form": "offset",
+     "qs": [
+      -12,
+      -8,
+      -4,
+      0,
+      4,
+      8
+     ],
+     "ks": [
+      0
+     ]
+    },
+    "R": {
+     "form": "offset",
+     "qs": [
+      0,
+      8,
+      12
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "role"
+    },
+    "A": {
+     "form": "offset",
+     "qs": [
+      0,
+      8,
+      12
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "anti"
+    },
+    "Kpos": {
+     "form": "offset",
+     "qs": [
+      0,
+      8,
+      12
+     ],
+     "ks": [
+      2,
+      4
+     ]
+    },
+    "Kneg": {
+     "form": "offset",
+     "qs": [
+      0,
+      8,
+      12
+     ],
+     "ks": [
+      -2,
+      -4
+     ]
+    }
+   }
+  },
+  "deepstack7b": {
+   "main_key": "main",
+   "families": {
+    "S": {
+     "form": "shared",
+     "qs": [
+      -4,
+      -2,
+      -1,
+      0,
+      2,
+      4
+     ]
+    },
+    "N": {
+     "form": "offset",
+     "qs": [
+      -4,
+      -2,
+      -1,
+      0,
+      2,
+      4
+     ],
+     "ks": [
+      0
+     ]
+    },
+    "R": {
+     "form": "offset",
+     "qs": [
+      -2,
+      0,
+      4
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "role"
+    },
+    "A": {
+     "form": "offset",
+     "qs": [
+      -2,
+      0,
+      4
+     ],
+     "abs_ks": [
+      2,
+      4
+     ],
+     "sign": "anti"
+    },
+    "Kpos": {
+     "form": "offset",
+     "qs": [
+      -2,
+      0,
+      4
+     ],
+     "ks": [
+      2,
+      4
+     ]
+    },
+    "Kneg": {
+     "form": "offset",
+     "qs": [
+      -2,
+      0,
+      4
+     ],
+     "ks": [
+      -2,
+      -4
+     ]
+    }
+   }
+  }
+ },
+ "budgets": {
+  "_about": "Budget = calibration mean input code length per evaluation unit: bytes (main + later) of the image each question uses, averaged over the unit's questions, then an equal-weight mean over units (GQA unit = image; DocVQA unit = document, tasks.docvqa.unit_field = cluster_id: the per-question page-image bytes are averaged within each document, then documents are averaged with equal weight; not the sum of bytes over a document's pages). Tier types: gap (cheapest reference-family candidate whose calibration score >= Z|Z + value*(C|C - Z|Z)), cc (>= value*C|C), abs (>= value), raw_fraction (value x bytes of C|C), bytes (fixed). Each family then takes its best calibration candidate within the budget.",
+  "reference_family": "S",
+  "tiers": {
+   "near_full": {
+    "type": "gap",
+    "value": 0.95
+   },
+   "strong": {
+    "type": "gap",
+    "value": 0.6
+   }
+  }
+ },
+ "targets": {
+  "_about": "Common task target for bytes-to-target. Same rule types as tiers (gap, cc, abs). basis 'split': the rule is applied to each split's own C|C / Z|Z (calibration for the choice, test for 'reached'); 'calibration': one absolute number from calibration used on both splits.",
+  "t95": {
+   "type": "gap",
+   "value": 0.95,
+   "basis": "split"
+  }
+ },
+ "bd": {
+  "min_points": 3,
+  "min_points_in_overlap": 2,
+  "min_overlap_score": 0.02,
+  "min_overlap_log10": 0.15,
+  "_about": "Curves: each family's calibration-Pareto candidates evaluated on test. Not reported (with the reason) when coverage is short."
+ },
+ "training": {
+  "_about": "Cross-evaluation of the training pilot. Arms come from run meta lora.meta[meta_fields.arm] via arm_aliases; base = lora null. Tiers: {'config': name} fixes the codestream config (same bytes for every arm), or {'bytes': B, 'candidates': [...]} lets each arm take its best calibration-split candidate within B (test envelope, labelled, when an evaluation has no calibration rows). Bytes to target: the cheapest target_candidates config reaching the reference target, chosen the same way.",
+  "models": {
+   "qwen8b": {
+    "task": "gqa-attribute",
+    "role": 1
+   },
+   "ibm4b": {
+    "task": "gqa-attribute",
+    "role": -1
+   }
+  },
+  "meta_fields": {
+   "arm": "arm",
+   "checkpoint": "checkpoint"
+  },
+  "arm_aliases": {
+   "base": "base",
+   "sft": "sft",
+   "plain": "sft",
+   "plain_sft": "sft",
+   "generic": "generic",
+   "symmetric": "generic",
+   "general": "generic",
+   "role": "role",
+   "anti": "anti",
+   "anti_role": "anti",
+   "antirole": "anti"
+  },
+  "reference": {
+   "arm": "sft",
+   "checkpoint": "same",
+   "config": "C|C",
+   "target": {
+    "type": "cc",
+    "value": 1.0
+   }
+  },
+  "tiers": {
+   "full": {
+    "config": "C|C"
+   },
+   "near_full": {
+    "config": "q4|k0"
+   },
+   "strong": {
+    "config": "q8|k0"
+   }
+  },
+  "model_tiers": {
+   "ibm4b": {
+    "near_full": {
+     "config": "q-4|k0"
+    },
+    "strong": {
+     "config": "q4|k0"
+    }
+   }
+  },
+  "target_candidates": "all",
+  "comparisons": [
+   [
+    "role",
+    "generic"
+   ],
+   [
+    "role",
+    "anti"
+   ],
+   [
+    "generic",
+    "anti"
+   ]
+  ],
+  "tolerance": 0.02,
+  "reading_tiers": [
+   "near_full",
+   "strong"
+  ]
+ }
+}

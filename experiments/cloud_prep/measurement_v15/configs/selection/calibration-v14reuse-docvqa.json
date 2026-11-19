@@ -1,0 +1,519 @@
+{
+ "schema": "followup-benchmark-selection-plan-v15",
+ "mode": "v14_reuse",
+ "benchmark": "docvqa",
+ "task": "docvqa_document_qa",
+ "split": "calibration",
+ "material_set": "calibration-v14reuse-docvqa_document_qa",
+ "seed": 20261029,
+ "calibration_fraction": null,
+ "max_units": 48,
+ "max_questions_per_unit": 2,
+ "rule": "pool: sha256('seed|split|benchmark|unit_id') first 15 hex / 16**15 < calibration_fraction -> calibration, else evaluation; units: ascending sha256('seed|unit|task|unit_id'); questions: ascending sha256('seed|question|task|question_id')",
+ "input_dataset_header": {},
+ "exclusions": [],
+ "counts": {
+  "eligible_questions": 495,
+  "eligible_units": 256,
+  "pool_units": 256,
+  "other_pool_units": 0,
+  "selected_units": 48,
+  "remaining_pool_units": 208,
+  "selected_questions": 94,
+  "selected_images": 56,
+  "dropped": {}
+ },
+ "units": [
+  {
+   "unit_id": "docvqa-document-flfl0228",
+   "question_ids": [
+    "5416",
+    "5419"
+   ],
+   "image_files": [
+    "images/a7a40b7cf25717865a1f-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-flkk0079",
+   "question_ids": [
+    "56049",
+    "56050"
+   ],
+   "image_files": [
+    "images/b79057b31e86cb440cb5-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fnvj0223",
+   "question_ids": [
+    "56922",
+    "56925"
+   ],
+   "image_files": [
+    "images/25a6042777226083fc58-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fybg0227",
+   "question_ids": [
+    "62506",
+    "62508"
+   ],
+   "image_files": [
+    "images/22662fb470c561d034fb-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gjhp0000",
+   "question_ids": [
+    "51501",
+    "51505"
+   ],
+   "image_files": [
+    "images/b753509a2016724b56cf-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gknp0227",
+   "question_ids": [
+    "59476",
+    "59484"
+   ],
+   "image_files": [
+    "images/51156b7792e613442b3b-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-glxm0052",
+   "question_ids": [
+    "54370",
+    "54374"
+   ],
+   "image_files": [
+    "images/a92682037459bc12fd4f-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gxyd0217",
+   "question_ids": [
+    "64325",
+    "64369"
+   ],
+   "image_files": [
+    "images/092065d34d505b2f7a94-clean.png",
+    "images/92723795b2bbd902392c-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hhnf0094",
+   "question_ids": [
+    "53726",
+    "53730"
+   ],
+   "image_files": [
+    "images/455c65e775d54c8a2a9c-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hhpj0226",
+   "question_ids": [
+    "650",
+    "651"
+   ],
+   "image_files": [
+    "images/3b15c6f020bad4abf866-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hlvj0223",
+   "question_ids": [
+    "55371",
+    "56800"
+   ],
+   "image_files": [
+    "images/614c956748cc9c4220fa-clean.png",
+    "images/cf94cafceffec68360e7-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hykp0227",
+   "question_ids": [
+    "56424",
+    "56428"
+   ],
+   "image_files": [
+    "images/2a112fa31fe61a545da6-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hzkg0227",
+   "question_ids": [
+    "33000",
+    "33005"
+   ],
+   "image_files": [
+    "images/424de4e2416f232b73c6-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jhng0227",
+   "question_ids": [
+    "60924"
+   ],
+   "image_files": [
+    "images/2d2c2d37ffa96b7ca0dd-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jnjm0223",
+   "question_ids": [
+    "64405",
+    "64413"
+   ],
+   "image_files": [
+    "images/cd30b5e84ea732055b36-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jzhd0227",
+   "question_ids": [
+    "25707",
+    "60931"
+   ],
+   "image_files": [
+    "images/2ef2ed4984b765356fce-clean.png",
+    "images/6d9bf38a79b24997ac14-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kgxc0228",
+   "question_ids": [
+    "52298",
+    "52302"
+   ],
+   "image_files": [
+    "images/5c3f596e6998a0824475-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-knmk0226",
+   "question_ids": [
+    "52156",
+    "52157"
+   ],
+   "image_files": [
+    "images/0575e1e9f3659413acc5-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kslw0227",
+   "question_ids": [
+    "64698",
+    "64699"
+   ],
+   "image_files": [
+    "images/a884eed703fb4c7e0515-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lhmg0227",
+   "question_ids": [
+    "26657",
+    "26659"
+   ],
+   "image_files": [
+    "images/b48cd3da3fb52592a6dd-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lldj0224",
+   "question_ids": [
+    "5671",
+    "5673"
+   ],
+   "image_files": [
+    "images/aad4d064c1a08b3de2c8-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lmcn0226",
+   "question_ids": [
+    "51295",
+    "51298"
+   ],
+   "image_files": [
+    "images/1915a4106dcd32cbcbda-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lmmg0227",
+   "question_ids": [
+    "64900",
+    "64902"
+   ],
+   "image_files": [
+    "images/eb341ba2142cccf3ae29-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lngn0226",
+   "question_ids": [
+    "43634",
+    "43637"
+   ],
+   "image_files": [
+    "images/a4a2f29eb9aa80958ca8-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lpdl0226",
+   "question_ids": [
+    "64492",
+    "64549"
+   ],
+   "image_files": [
+    "images/72a3ba717916c6396332-clean.png",
+    "images/dd2e28b6d2aa18c414b3-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lpgn0226",
+   "question_ids": [
+    "43484",
+    "43509"
+   ],
+   "image_files": [
+    "images/7e5772464629c5e1511d-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lrwp0078",
+   "question_ids": [
+    "58770"
+   ],
+   "image_files": [
+    "images/0dc7ca42f2d80d0f6fa7-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mhxx0227",
+   "question_ids": [
+    "59465",
+    "59467"
+   ],
+   "image_files": [
+    "images/a549f80cd05d2ecd5ffe-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mzdv0228",
+   "question_ids": [
+    "49104",
+    "49107"
+   ],
+   "image_files": [
+    "images/83c3f040ba0ff1aebc92-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nfdg0072",
+   "question_ids": [
+    "55091",
+    "55096"
+   ],
+   "image_files": [
+    "images/d2f0464748cc9c9658b6-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nmmk0226",
+   "question_ids": [
+    "3845",
+    "3847"
+   ],
+   "image_files": [
+    "images/50dfb38f1347634cb763-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-pgpg0227",
+   "question_ids": [
+    "37304",
+    "37340"
+   ],
+   "image_files": [
+    "images/75b14a87be329e84739e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-phgl0228",
+   "question_ids": [
+    "5435",
+    "5437"
+   ],
+   "image_files": [
+    "images/a7ff0dde742b3d9d9ff9-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-phwk0226",
+   "question_ids": [
+    "59915",
+    "60047"
+   ],
+   "image_files": [
+    "images/26d5465aafb6db75638c-clean.png",
+    "images/dfecbedf80a047ecb82e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-pkkn0226",
+   "question_ids": [
+    "5698",
+    "5700"
+   ],
+   "image_files": [
+    "images/52dc2a950a335ca9ca3c-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-pzbd0227",
+   "question_ids": [
+    "25502",
+    "60805"
+   ],
+   "image_files": [
+    "images/253e7f2da03ae0d41447-clean.png",
+    "images/5003f56fe8268fdd2171-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qnwd0227",
+   "question_ids": [
+    "63753",
+    "63777"
+   ],
+   "image_files": [
+    "images/33a34f74247627fa5fc8-clean.png",
+    "images/5f50e50b553da3624777-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qync0227",
+   "question_ids": [
+    "36941",
+    "36944"
+   ],
+   "image_files": [
+    "images/dc6e29df96fedba17fe3-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rmpn0000",
+   "question_ids": [
+    "6783",
+    "6821"
+   ],
+   "image_files": [
+    "images/9273d32c6f5155704128-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rpvm0227",
+   "question_ids": [
+    "59493",
+    "59496"
+   ],
+   "image_files": [
+    "images/22afe0b6c65c4e72ef12-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rzbj0037",
+   "question_ids": [
+    "359",
+    "431"
+   ],
+   "image_files": [
+    "images/083cd27b188706485cef-clean.png",
+    "images/f8e1cb2f1046b2b13301-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-spwx0225",
+   "question_ids": [
+    "4743",
+    "4744"
+   ],
+   "image_files": [
+    "images/df2f7521f29cfc49293a-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-srjf0226",
+   "question_ids": [
+    "50938",
+    "50939"
+   ],
+   "image_files": [
+    "images/8fe7eeb7bd5546e0e462-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-thnf0077",
+   "question_ids": [
+    "59831",
+    "59832"
+   ],
+   "image_files": [
+    "images/b288aebd148b69b84fd3-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-tzjl0226",
+   "question_ids": [
+    "46421",
+    "46435"
+   ],
+   "image_files": [
+    "images/b91c2d0cf2c286eeaa3a-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xzyp0227",
+   "question_ids": [
+    "57987",
+    "57989"
+   ],
+   "image_files": [
+    "images/c3ff8a9079bfdb5cb97f-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yrvw0217",
+   "question_ids": [
+    "45744",
+    "45747"
+   ],
+   "image_files": [
+    "images/bc3cc724c5347f2d8064-clean.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yshb0228",
+   "question_ids": [
+    "49449",
+    "49454"
+   ],
+   "image_files": [
+    "images/80b5f5b228e608a9f2ca-clean.png"
+   ]
+  }
+ ],
+ "importer_sha256": "3b41b7c82fb52a66369075c17a0b425c45d9a1f5cf7e5fac2833223716d4d284",
+ "content": "ids, counts and sha256s only: no question text, answers or URLs",
+ "input": {
+  "sha256": "95efdf2cc3be8f88499328caf78b23b0f2e2dbd70bdb8a6273e10a5e8ad036fb"
+ }
+}

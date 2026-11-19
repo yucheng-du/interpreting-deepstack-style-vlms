@@ -1,0 +1,290 @@
+{
+ "sha": "3aab69bff6d7ce587b839f518dda40d3379e522d",
+ "tree": [
+  {
+   "type": "blob",
+   "path": "llava/__init__.py",
+   "sha": "c1ea887ec3ebf27c56b9783bdf2bc158e804c24f"
+  },
+  {
+   "type": "blob",
+   "path": "llava/constants.py",
+   "sha": "374be090510b302de9882d880c755787a8eafe11"
+  },
+  {
+   "type": "blob",
+   "path": "llava/conversation.py",
+   "sha": "3bc7913efc437d964e9b58b7adbe435ec7f4216f"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_gpt_review.py",
+   "sha": "8af4559c65fc2728b11fd2097a109981ee1ef686"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_gpt_review_bench.py",
+   "sha": "06160f2422b5368f30fb967f7cae635208a1dc69"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_gpt_review_visual.py",
+   "sha": "d6e407a400a67020d801e6c27a3c32a2ee38f30c"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_pope.py",
+   "sha": "b115b8f2327ea9d972f9e41bcbb03c68be6b3508"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_science_qa.py",
+   "sha": "ccf206bbd7a5d6376eef82d61b3ef8bbe0f71c6c"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_science_qa_gpt4.py",
+   "sha": "c2ff17c915481fb556aba6ec816a9e08f519c515"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_science_qa_gpt4_requery.py",
+   "sha": "698546e995d365d1ccc2c25a87e6c5cd681e6eb6"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/eval_textvqa.py",
+   "sha": "468f4bb120448a036bd5b5c7955464fe2e13892a"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/generate_webpage_data_from_table.py",
+   "sha": "92602258ccd953a1d7137056aaf15c8de8166e21"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/m4c_evaluator.py",
+   "sha": "e30e958da061a4f0a0bfe34b12d2fcaeba7ff2f4"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/model_qa.py",
+   "sha": "2e254da152ac644ff54fb5fa57e625d9e6ba31d1"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/model_vqa.py",
+   "sha": "938706438b1d332505fdd0e9670df72c31eee1b2"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/model_vqa_loader.py",
+   "sha": "d435b7d835bdfb2934e32a93f1e8eaab39420ad9"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/model_vqa_mmbench.py",
+   "sha": "bd7a4c8085ddb7b237b17b054e5eaa0569018178"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/model_vqa_science.py",
+   "sha": "90fc681a20ee72131862772107f6be572f010c99"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/qa_baseline_gpt35.py",
+   "sha": "babab6e12b4bb8cfa74a7edfa5e56cd1b3e2bf6c"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/run_llava.py",
+   "sha": "24b0fffcc11a2045dfc7f5ac6cae4f057aaba6d6"
+  },
+  {
+   "type": "blob",
+   "path": "llava/eval/summarize_gpt_review.py",
+   "sha": "0f796a3880341739677a5fe3bfbcc90515a0f324"
+  },
+  {
+   "type": "blob",
+   "path": "llava/mm_utils.py",
+   "sha": "38c113d0f1744abd4f325a35b8db742811a729cb"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/__init__.py",
+   "sha": "5bbd61e9914b83ed7dc0afd11eec494ef4d63e8e"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/apply_delta.py",
+   "sha": "666dd9691bde7d54ddf2871e311d6f621e29f099"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/builder.py",
+   "sha": "f2d1e535ddc4db9a4bd496cbeefa1164fec36724"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/consolidate.py",
+   "sha": "1e324210e229eeba23b75791bba82df7c6e639eb"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/deepstack_arch.py",
+   "sha": "554f1b2da546d01b3641940c8d96daeccb12c0cd"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/custom_llama.py",
+   "sha": "9de82d97d47e89ffb484f5067a42dfbc2f2223c1"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/custom_phi.py",
+   "sha": "ec216ffce227c5d75d0f646a67817137f1e97aad"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/deepstack_llama.py",
+   "sha": "dada052f407ee4420ef340568e9690af430f50ba"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/deepstack_phi.py",
+   "sha": "7651f255bc4773354229104375d29978d300f38d"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/llava_llama.py",
+   "sha": "89f7a8e6586ef53695302692499b9910a2b2db30"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/llava_mistral.py",
+   "sha": "0def682ea3c497e36aa85f1c53eb2cfab6e2fb87"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/llava_mpt.py",
+   "sha": "02e5237ece031af23fcd76b5b4e0d9b0bc5f55cc"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/phi3/configuration_phi3.py",
+   "sha": "f4553db23ac65c608fd150a14acbd04d3ff80a0f"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/language_model/phi3/modeling_phi3.py",
+   "sha": "bef0f37cab22c9d47c17a8fda6b9eef57a16049b"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/llava_arch.py",
+   "sha": "bf56d5df8da84fedd3ace232f18e1712e315ae6f"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/make_delta.py",
+   "sha": "4ae55d59c2c8bab80299272314a41bbeb959d8ed"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/multimodal_encoder/builder.py",
+   "sha": "29f63a26d5a4485a64bf235391d0f7593a96f3b6"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/multimodal_encoder/clip_encoder.py",
+   "sha": "2bac0ea18f70a05d038c073979e9ba8d90c50ff9"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/multimodal_projector/builder.py",
+   "sha": "31cd4f48e6055cd6d00a162af30b1c8139e26b57"
+  },
+  {
+   "type": "blob",
+   "path": "llava/model/utils.py",
+   "sha": "2563f89c6cedf5e73508afec8f9979105df9b745"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/__init__.py",
+   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/cli.py",
+   "sha": "5ecb30d5654b6a3f7162bcc25d3b09a855cd7789"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/controller.py",
+   "sha": "d4bf1b4c47ccdb1401b18f8397868ec016d1c43a"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/gradio_web_server.py",
+   "sha": "c07efc122950da37455608b609dcf1f2b4103d56"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/model_worker.py",
+   "sha": "9144329893c51f402ff2e2f65d9fb7baf177bd52"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/register_worker.py",
+   "sha": "2c2c40295e0351f25709ba25554c9329f15bf0d2"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/sglang_worker.py",
+   "sha": "a3297b7c295abddedfaac7f6fbe882d7b672487d"
+  },
+  {
+   "type": "blob",
+   "path": "llava/serve/test_message.py",
+   "sha": "6b090faed0e630b03b2294545050f1f4f5032cad"
+  },
+  {
+   "type": "blob",
+   "path": "llava/train/llama_flash_attn_monkey_patch.py",
+   "sha": "31db2eff8d1c4b3ae645583dfc5e156e818b6f1c"
+  },
+  {
+   "type": "blob",
+   "path": "llava/train/llama_xformers_attn_monkey_patch.py",
+   "sha": "f8351e41ccd4a64dca237bd8f8be0702b23989dc"
+  },
+  {
+   "type": "blob",
+   "path": "llava/train/llava_trainer.py",
+   "sha": "ce2853a41a1d232ff823bdd3afeb4823132b6672"
+  },
+  {
+   "type": "blob",
+   "path": "llava/train/train.py",
+   "sha": "ce85687ef7081f81b9338b443a2ef033080d9f2f"
+  },
+  {
+   "type": "blob",
+   "path": "llava/train/train_mem.py",
+   "sha": "29ea06170f23a845627c7e3dd52d3a5bdb379767"
+  },
+  {
+   "type": "blob",
+   "path": "llava/train/train_xformers.py",
+   "sha": "23a59bf4ee0f365de9fbf3838836b170058126d6"
+  },
+  {
+   "type": "blob",
+   "path": "llava/utils.py",
+   "sha": "4006cf917e26c365080b0844c56fab78c48457c0"
+  }
+ ]
+}

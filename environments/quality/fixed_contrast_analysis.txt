@@ -1,0 +1,3 @@
+# CPU analysis of fixed-contrast results, Python 3.14.
+numpy==2.4.4
+scipy==1.17.1

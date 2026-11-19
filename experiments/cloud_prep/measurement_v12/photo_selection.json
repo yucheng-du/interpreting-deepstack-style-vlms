@@ -1,0 +1,1414 @@
+{
+  "excluded_source_ids": [
+    "107976",
+    "1143",
+    "1159302",
+    "1159370",
+    "1159419",
+    "1159610",
+    "1159870",
+    "1159996",
+    "1160065",
+    "1160153",
+    "132",
+    "150294",
+    "150338",
+    "150391",
+    "1539",
+    "1555",
+    "1591816",
+    "1591846",
+    "1592000",
+    "1592028",
+    "1592325",
+    "1592362",
+    "1592672",
+    "1593019",
+    "1593136",
+    "1593222",
+    "1754",
+    "1789",
+    "2174",
+    "2255",
+    "2315632",
+    "2315797",
+    "2315837",
+    "2315969",
+    "2316224",
+    "2316270",
+    "2316439",
+    "2316511",
+    "2317577",
+    "2317865",
+    "2317996",
+    "2318120",
+    "2318676",
+    "2318952",
+    "2319707",
+    "2320164",
+    "2320241",
+    "2320375",
+    "2320418",
+    "2321207",
+    "2321580",
+    "2321602",
+    "2322033",
+    "2322267",
+    "2322705",
+    "2322928",
+    "2323107",
+    "2324015",
+    "2325067",
+    "2325268",
+    "2325399",
+    "2325912",
+    "2325925",
+    "2325975",
+    "2327305",
+    "2329990",
+    "2331757",
+    "2333685",
+    "2333688",
+    "2334016",
+    "2334073",
+    "2334343",
+    "2334847",
+    "2335923",
+    "2336201",
+    "2336634",
+    "2336697",
+    "2336788",
+    "2337904",
+    "2338899",
+    "2338999",
+    "2339701",
+    "2339755",
+    "2340720",
+    "2340727",
+    "2341157",
+    "2341481",
+    "2341759",
+    "2341895",
+    "2342009",
+    "2342191",
+    "2343054",
+    "2343524",
+    "2344291",
+    "2344556",
+    "2344723",
+    "2345010",
+    "2345312",
+    "2345900",
+    "2346179",
+    "2346586",
+    "2346902",
+    "2347304",
+    "2348088",
+    "2348548",
+    "2350760",
+    "2351227",
+    "2353849",
+    "2353871",
+    "2354956",
+    "2355870",
+    "2356374",
+    "2356648",
+    "2356800",
+    "2357817",
+    "2358246",
+    "2358643",
+    "2359454",
+    "2359708",
+    "2360178",
+    "2360368",
+    "2360424",
+    "2360467",
+    "2361190",
+    "2362192",
+    "2362708",
+    "2363090",
+    "2363527",
+    "2363580",
+    "2363770",
+    "2363910",
+    "2364235",
+    "2364331",
+    "2364384",
+    "2364625",
+    "2365104",
+    "2365633",
+    "2366436",
+    "2366491",
+    "2366935",
+    "2367398",
+    "2368697",
+    "2368981",
+    "2369832",
+    "2369968",
+    "2370003",
+    "2370329",
+    "2370376",
+    "2370491",
+    "2370539",
+    "2371409",
+    "2371509",
+    "2372249",
+    "2372524",
+    "2372550",
+    "2372676",
+    "2373266",
+    "2373535",
+    "2373583",
+    "2373791",
+    "2374254",
+    "2374412",
+    "2374714",
+    "2374840",
+    "2375048",
+    "2377",
+    "2377361",
+    "2377776",
+    "2377844",
+    "2377950",
+    "2378727",
+    "2379339",
+    "2379551",
+    "2379845",
+    "2379853",
+    "2379877",
+    "2380622",
+    "2380746",
+    "2380885",
+    "2380896",
+    "2380902",
+    "2381042",
+    "2381393",
+    "2381839",
+    "2382456",
+    "2382462",
+    "2382521",
+    "2382611",
+    "2382867",
+    "2382870",
+    "2383239",
+    "2383445",
+    "2383915",
+    "2385147",
+    "2385572",
+    "2385843",
+    "2386149",
+    "2387274",
+    "2387638",
+    "2387641",
+    "2387929",
+    "2388998",
+    "2389020",
+    "2389148",
+    "2389320",
+    "2389462",
+    "2389707",
+    "2390036",
+    "2390315",
+    "2391752",
+    "2391777",
+    "2393185",
+    "2393785",
+    "2393842",
+    "2394221",
+    "2395300",
+    "2396382",
+    "2396918",
+    "2396968",
+    "2397097",
+    "2397504",
+    "2397723",
+    "2398231",
+    "2398306",
+    "2399326",
+    "2400096",
+    "2400317",
+    "2400743",
+    "2400827",
+    "2401635",
+    "2401997",
+    "2402047",
+    "2402160",
+    "2402240",
+    "2402490",
+    "2403012",
+    "2404533",
+    "2404792",
+    "2405691",
+    "2405831",
+    "2405940",
+    "2406224",
+    "2406255",
+    "2406276",
+    "2406434",
+    "2406465",
+    "2406967",
+    "2407168",
+    "2407300",
+    "2407709",
+    "2407773",
+    "2408028",
+    "2408306",
+    "2408470",
+    "2408753",
+    "2408760",
+    "2408865",
+    "2409037",
+    "2409211",
+    "2409216",
+    "2409241",
+    "2409529",
+    "2409769",
+    "2409892",
+    "2410000",
+    "2410013",
+    "2410295",
+    "2410323",
+    "2410954",
+    "2411268",
+    "2411540",
+    "2411618",
+    "2412283",
+    "2412819",
+    "2413521",
+    "2414129",
+    "2415182",
+    "2415792",
+    "2417794",
+    "285602",
+    "285685",
+    "285753",
+    "285822",
+    "285841",
+    "285915",
+    "3174",
+    "3268",
+    "3270",
+    "3275",
+    "3298",
+    "3315",
+    "3333",
+    "3396",
+    "3481",
+    "3484",
+    "4",
+    "405",
+    "4107",
+    "4327",
+    "460",
+    "4609",
+    "498087",
+    "498157",
+    "611",
+    "61566",
+    "641",
+    "713092",
+    "713132",
+    "713259",
+    "713352",
+    "713428",
+    "713454",
+    "713458",
+    "713529",
+    "713558",
+    "713581",
+    "713626",
+    "713759",
+    "713858",
+    "767"
+  ],
+  "selected_photos": [
+    {
+      "image_id": "2351540",
+      "query_descriptions": {
+        "0": "baseball cap worn by the standing man with a glove",
+        "1": "colored shell of the catcher's helmet"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 114653,
+        "compressed_bytes": 114625,
+        "compression": 8,
+        "crc32": 3560183830,
+        "name": "images/2351540.jpg",
+        "offset": 14913194785
+      },
+      "sha256": "49471d3895ab1fb0c6127f4153d54779476112ca8a44f44ac9d124dcc5192eb5"
+    },
+    {
+      "image_id": "2380980",
+      "query_descriptions": {
+        "0": "van closest to the camera",
+        "1": "bus behind the airplane"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 146017,
+        "compressed_bytes": 141555,
+        "compression": 8,
+        "crc32": 2358954885,
+        "name": "images/2380980.jpg",
+        "offset": 8231970754
+      },
+      "sha256": "79a3694f58a8015a027cf4634a95f56a0bf984cb871b9f4e82c74087fa4f996f"
+    },
+    {
+      "image_id": "2399217",
+      "query_descriptions": {
+        "0": "cup beside the seated woman",
+        "1": "jeans worn by the woman holding the umbrella"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 192713,
+        "compressed_bytes": 192137,
+        "compression": 8,
+        "crc32": 3546483528,
+        "name": "images/2399217.jpg",
+        "offset": 13260615954
+      },
+      "sha256": "af47b6126085bd13ad54a11fedc06d83f702118ea13c0ae6155a56ce2707b615"
+    },
+    {
+      "image_id": "2320471",
+      "query_descriptions": {
+        "0": "main colored fabric of the towel on the seated tennis player's lap",
+        "1": "shorts worn by the standing person"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 200612,
+        "compressed_bytes": 200011,
+        "compression": 8,
+        "crc32": 3251999288,
+        "name": "images/2320471.jpg",
+        "offset": 1501797887
+      },
+      "sha256": "fb0c4477183b2e608941218ffd7d49ce2def0b86fd96a27f675f121bab74ac09"
+    },
+    {
+      "image_id": "2351083",
+      "query_descriptions": {
+        "0": "colored front panel of the bag behind the dog",
+        "1": "strip of carpet along the bottom edge of the photograph"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 152743,
+        "compressed_bytes": 152254,
+        "compression": 8,
+        "crc32": 2166586307,
+        "name": "images/2351083.jpg",
+        "offset": 8105505855
+      },
+      "sha256": "3cffacdbb297b096ff50fe2b6bc20165efefe559adf4d3bcf54bec1f2d36444b"
+    },
+    {
+      "image_id": "1592494",
+      "query_descriptions": {
+        "0": "main fabric of the skirt worn by the woman in the foreground",
+        "1": "trousers worn by the woman in the background"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 656868,
+        "compressed_bytes": 656352,
+        "compression": 8,
+        "crc32": 3035988062,
+        "name": "images/1592494.jpg",
+        "offset": 15962224603
+      },
+      "sha256": "5ae9a20b509880177e9ae88fcef48fba3c548ffc23707ae85c4a7f2297b2adc5"
+    },
+    {
+      "image_id": "2340836",
+      "query_descriptions": {
+        "0": "upper surface of the board under the woman's feet",
+        "1": "shorts worn by the woman"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 122934,
+        "compressed_bytes": 122299,
+        "compression": 8,
+        "crc32": 3753435427,
+        "name": "images/2340836.jpg",
+        "offset": 13020759379
+      },
+      "sha256": "d0dcd74974869f6c9115a89dbc1c9c382a5e3a4b864221bf921a0ea9b7edf1f1"
+    },
+    {
+      "image_id": "2377392",
+      "query_descriptions": {
+        "0": "visible trouser leg nearest the kite",
+        "1": "kite above the person"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 80543,
+        "compressed_bytes": 80469,
+        "compression": 8,
+        "crc32": 644970354,
+        "name": "images/2377392.jpg",
+        "offset": 10823537088
+      },
+      "sha256": "32ba072b763a4e10fa01ddc7e8cc84393a64e7235d09d8cfac29191e854656db"
+    },
+    {
+      "image_id": "2403661",
+      "query_descriptions": {
+        "0": "fire hydrant",
+        "1": "upper sleeve of the sweater worn by the seated person"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 202286,
+        "compressed_bytes": 202268,
+        "compression": 8,
+        "crc32": 3277517283,
+        "name": "images/2403661.jpg",
+        "offset": 13458809250
+      },
+      "sha256": "1bc3778e1715679b66d94ea8bc31efc3c1d85b1559c9ab486b4807246160f8c7"
+    },
+    {
+      "image_id": "2355166",
+      "query_descriptions": {
+        "0": "umbrella held by the jumping person",
+        "1": "jeans worn by the jumping person"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 231883,
+        "compressed_bytes": 231866,
+        "compression": 8,
+        "crc32": 1071173351,
+        "name": "images/2355166.jpg",
+        "offset": 17732030528
+      },
+      "sha256": "6b463a264604f560ef39cd0afa7a463aa62ab2ce4cfac8a448c32720734bd31d"
+    },
+    {
+      "image_id": "2375248",
+      "query_descriptions": {
+        "0": "plate holding the bread",
+        "1": "cap of the small white bottle"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 121446,
+        "compressed_bytes": 120849,
+        "compression": 8,
+        "crc32": 1861852926,
+        "name": "images/2375248.jpg",
+        "offset": 19658126966
+      },
+      "sha256": "5d3efe27c3f72330c0af6244d1e22fbeddb2a21b116c001c03aa874abab8f515"
+    },
+    {
+      "image_id": "2395034",
+      "query_descriptions": {
+        "0": "towel draped over the armchair",
+        "1": "bag on top of the refrigerator"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 87558,
+        "compressed_bytes": 86967,
+        "compression": 8,
+        "crc32": 1897258903,
+        "name": "images/2395034.jpg",
+        "offset": 8743828099
+      },
+      "sha256": "ed88984e81ccfbbecdc34938cf60daba6893005b2508907be37df87ab0ae9d12"
+    },
+    {
+      "image_id": "2409513",
+      "query_descriptions": {
+        "0": "shorts worn by the seated man",
+        "1": "main colored fabric on the front of the bag beside the seated man"
+      },
+      "note": "Accepted with explicit stable object/part descriptions; original annotation treated only as candidate source.",
+      "archive_member": {
+        "bytes": 208502,
+        "compressed_bytes": 208489,
+        "compression": 8,
+        "crc32": 3308131519,
+        "name": "images/2409513.jpg",
+        "offset": 15617603941
+      },
+      "sha256": "020731f1e266306d872271813cdde540467dc32cc151e1c5082fe23dc71696b3"
+    },
+    {
+      "image_id": "2356789",
+      "query_descriptions": {
+        "0": "colored front panel of the running man's shirt",
+        "1": "colored patch on the ball beside the fence"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 210875,
+        "compressed_bytes": 210288,
+        "compression": 8,
+        "crc32": 3736276785,
+        "name": "images/2356789.jpg",
+        "offset": 19417948767
+      },
+      "sha256": "8a144d5fc95c1af8e6ec0d227506569ecfe9de537dd394ffee8aa4fe4b7d5dac"
+    },
+    {
+      "image_id": "2334761",
+      "query_descriptions": {
+        "0": "scarf worn by the man",
+        "1": "bus behind the man"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 146496,
+        "compressed_bytes": 146449,
+        "compression": 8,
+        "crc32": 1164602378,
+        "name": "images/2334761.jpg",
+        "offset": 20122093819
+      },
+      "sha256": "279ba3c73031ee098d10dfd0c0d0c9962a615afc4c20c98371bdccde2796fa8f"
+    },
+    {
+      "image_id": "2386496",
+      "query_descriptions": {
+        "0": "bag carried against the person's chest",
+        "1": "suitcase standing on the platform"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 146100,
+        "compressed_bytes": 145519,
+        "compression": 8,
+        "crc32": 1814240151,
+        "name": "images/2386496.jpg",
+        "offset": 15417270320
+      },
+      "sha256": "070c058868cbd985c45b3d61d92726b9d4b56b38a4bd2bfe62a37b6d4ac7238c"
+    },
+    {
+      "image_id": "2345247",
+      "query_descriptions": {
+        "0": "colored body of the cooler on the floor",
+        "1": "bedspread on the bed with shoes on it"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 115049,
+        "compressed_bytes": 114435,
+        "compression": 8,
+        "crc32": 150440077,
+        "name": "images/2345247.jpg",
+        "offset": 4627776485
+      },
+      "sha256": "aa2580438ed2f195cf34391a5e9e66abb5d1de270094a369b7f4dafc5db75598"
+    },
+    {
+      "image_id": "2374555",
+      "query_descriptions": {
+        "0": "shorts worn by the person in the foreground",
+        "1": "dress worn by the child near the swing"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 189307,
+        "compressed_bytes": 188563,
+        "compression": 8,
+        "crc32": 3585832048,
+        "name": "images/2374555.jpg",
+        "offset": 18911389660
+      },
+      "sha256": "77910324b3f3f8080da49e1a941a650d39f6a179263d8f83aabb357fdeb5152a"
+    },
+    {
+      "image_id": "2406297",
+      "query_descriptions": {
+        "0": "painted body of the fire hydrant",
+        "1": "truck parked across the road"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 130564,
+        "compressed_bytes": 129906,
+        "compression": 8,
+        "crc32": 846428733,
+        "name": "images/2406297.jpg",
+        "offset": 6360351494
+      },
+      "sha256": "35113352210d51fbf385b7d004af77c59102f560a713d9ba0afa31b41bdd1cbf"
+    },
+    {
+      "image_id": "2348068",
+      "query_descriptions": {
+        "0": "t-shirt worn by the man behind the bar",
+        "1": "coat worn by the person seated closest to the camera"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 152152,
+        "compressed_bytes": 152089,
+        "compression": 8,
+        "crc32": 542780398,
+        "name": "images/2348068.jpg",
+        "offset": 890286712
+      },
+      "sha256": "d0cab2d06e60edd109c205db2c0afaef172953cb7ec2abc64960b11226c933f6"
+    },
+    {
+      "image_id": "2408247",
+      "query_descriptions": {
+        "0": "trousers worn by the child",
+        "1": "painted frame of the door behind the child"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 127895,
+        "compressed_bytes": 127851,
+        "compression": 8,
+        "crc32": 707999788,
+        "name": "images/2408247.jpg",
+        "offset": 3596492613
+      },
+      "sha256": "9bed129438d0bd3823aca88ac52bfa941a5590058aa765d5f40646e1b3e118c2"
+    },
+    {
+      "image_id": "2390681",
+      "query_descriptions": {
+        "0": "colored side panels of the bus on the bridge",
+        "1": "canopy of the boat nearest the camera"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 133043,
+        "compressed_bytes": 130415,
+        "compression": 8,
+        "crc32": 836594913,
+        "name": "images/2390681.jpg",
+        "offset": 9411550858
+      },
+      "sha256": "fb423f5a1aafcdcdb3029fac0a7ef0e45eded0f319a1d886ab53e2b0b6431a0a"
+    },
+    {
+      "image_id": "2366186",
+      "query_descriptions": {
+        "0": "narrow-necked vase beside the small bowl",
+        "1": "small bowl beside the narrow-necked vase"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 163102,
+        "compressed_bytes": 162980,
+        "compression": 8,
+        "crc32": 1940234137,
+        "name": "images/2366186.jpg",
+        "offset": 10770989616
+      },
+      "sha256": "507a7af46e20efdf59b209f67a80c82eda6904e10cc148c71a92913bd32a6dfc"
+    },
+    {
+      "image_id": "2403307",
+      "query_descriptions": {
+        "0": "jacket worn by the skier holding both poles down",
+        "1": "coat worn by the skier with a raised arm"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 121126,
+        "compressed_bytes": 121071,
+        "compression": 8,
+        "crc32": 908351664,
+        "name": "images/2403307.jpg",
+        "offset": 9801385648
+      },
+      "sha256": "a2b79c3a8434c65920819630e936f661b3f785d4e2be51f2388b3852cd3dcff0"
+    },
+    {
+      "image_id": "2377052",
+      "query_descriptions": {
+        "0": "t-shirt worn by the boy beside the cow",
+        "1": "dress worn by the girl beside the cow"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 144309,
+        "compressed_bytes": 143970,
+        "compression": 8,
+        "crc32": 3482554823,
+        "name": "images/2377052.jpg",
+        "offset": 15662165269
+      },
+      "sha256": "67d4af18a4ffb13d8f64080e332712e7671dc50c24999fdbbab00f77716c3fe3"
+    },
+    {
+      "image_id": "2408930",
+      "query_descriptions": {
+        "0": "colored fabric of the child's shorts",
+        "1": "towel hanging over the empty beach chair"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 34370,
+        "compressed_bytes": 34324,
+        "compression": 8,
+        "crc32": 87835701,
+        "name": "images/2408930.jpg",
+        "offset": 2186229953
+      },
+      "sha256": "cd289668896c7f32d453888e4fa2c66309a12393f0cf7c51c2a7c0f8487b2422"
+    },
+    {
+      "image_id": "2407633",
+      "query_descriptions": {
+        "0": "frisbee next to the raised foot",
+        "1": "jacket worn by the person jumping"
+      },
+      "note": "Viewed original and both single-object red/blue edits; stable description explicitly refers to edited part where needed.",
+      "archive_member": {
+        "bytes": 94274,
+        "compressed_bytes": 89903,
+        "compression": 8,
+        "crc32": 3098004513,
+        "name": "images/2407633.jpg",
+        "offset": 10738289239
+      },
+      "sha256": "6d1f087b86b173f4d4ea846ea82d4e20be874a38fb720a4b7a3532c52f862613"
+    },
+    {
+      "image_id": "2331460",
+      "query_descriptions": {
+        "0": "front of the train",
+        "1": "visible trouser leg beside the bag carried by the nearest standing person"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 170800,
+        "compressed_bytes": 170354,
+        "compression": 8,
+        "crc32": 1974526093,
+        "name": "images/2331460.jpg",
+        "offset": 2552647377
+      },
+      "sha256": "e00e1815461ccff6c99d1fd31ba100a1e5aa3f6fe681faa422265b34afda2cc2"
+    },
+    {
+      "image_id": "2359336",
+      "query_descriptions": {
+        "0": "shirt worn by the batter",
+        "1": "shirt worn by the umpire"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 137588,
+        "compressed_bytes": 137004,
+        "compression": 8,
+        "crc32": 2667146065,
+        "name": "images/2359336.jpg",
+        "offset": 12953918404
+      },
+      "sha256": "93ea88dd771a774d96595d960889785eab6ff395abd1953c45935e5d122d364c"
+    },
+    {
+      "image_id": "2378886",
+      "query_descriptions": {
+        "0": "cup held by the girl behind the girl eating fruit",
+        "1": "visible jeans of the person standing behind the girl eating fruit"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 148914,
+        "compressed_bytes": 148891,
+        "compression": 8,
+        "crc32": 1698158087,
+        "name": "images/2378886.jpg",
+        "offset": 6245701891
+      },
+      "sha256": "c05098dd2ec697608335412febafd5c3c7a82054db802b82fe59b81b6dd918b6"
+    },
+    {
+      "image_id": "2416201",
+      "query_descriptions": {
+        "0": "large shallow bowl on the table",
+        "1": "jeans worn by the person seated farthest from the camera"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 199127,
+        "compressed_bytes": 198481,
+        "compression": 8,
+        "crc32": 2156299569,
+        "name": "images/2416201.jpg",
+        "offset": 1000678000
+      },
+      "sha256": "00c51bdfb01ebaadccd713e742b152746d7ab8fe926e245d0a2b2a65b4f2684a"
+    },
+    {
+      "image_id": "2389325",
+      "query_descriptions": {
+        "0": "painted body of the motorcycle",
+        "1": "shorts worn by the girl with long hair"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 183554,
+        "compressed_bytes": 183533,
+        "compression": 8,
+        "crc32": 1517860796,
+        "name": "images/2389325.jpg",
+        "offset": 11929876606
+      },
+      "sha256": "0f8f56875b4ae4d2e2c8a60da8f63d7a201aa77f7b637f0752b3bef7fe752a05"
+    },
+    {
+      "image_id": "2402328",
+      "query_descriptions": {
+        "0": "exposed top of the fire hydrant in the snow",
+        "1": "bus parked near the building"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 69799,
+        "compressed_bytes": 69707,
+        "compression": 8,
+        "crc32": 1894169252,
+        "name": "images/2402328.jpg",
+        "offset": 21171299338
+      },
+      "sha256": "8a96e678bc99dda0bc2419ecf5268da6bc6e3a90cece957140343f0f3406c0c7"
+    },
+    {
+      "image_id": "2402851",
+      "query_descriptions": {
+        "0": "ball above the trampoline",
+        "1": "colored fabric of the child's shorts"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 180112,
+        "compressed_bytes": 179536,
+        "compression": 8,
+        "crc32": 251556022,
+        "name": "images/2402851.jpg",
+        "offset": 9454763069
+      },
+      "sha256": "cc0058fcc52883a1e20c406044fc8ed4cf4b18a643f24dce7f400b969e233000"
+    },
+    {
+      "image_id": "2394625",
+      "query_descriptions": {
+        "0": "frisbee held by the seated man",
+        "1": "jeans worn by the man holding the frisbee"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 142462,
+        "compressed_bytes": 141562,
+        "compression": 8,
+        "crc32": 144592821,
+        "name": "images/2394625.jpg",
+        "offset": 16034168775
+      },
+      "sha256": "4bce7852b4f52b95d04a219e583b4f3d0f65e9a30c48ea5aa58b5ce65d1e00d3"
+    },
+    {
+      "image_id": "2343604",
+      "query_descriptions": {
+        "0": "cap worn by the fielder holding a glove",
+        "1": "helmet worn by the player in the white uniform"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 123493,
+        "compressed_bytes": 123434,
+        "compression": 8,
+        "crc32": 2367586807,
+        "name": "images/2343604.jpg",
+        "offset": 4729301031
+      },
+      "sha256": "5d09ab871cf1a406d9049a8b15d6419c4bc448fd85f8b5fbef8f5a075215112e"
+    },
+    {
+      "image_id": "2404956",
+      "query_descriptions": {
+        "0": "folded blanket beside the dark bag on the stone platform",
+        "1": "narrow painted door panel beside the hanging garland"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 182072,
+        "compressed_bytes": 182042,
+        "compression": 8,
+        "crc32": 2400571148,
+        "name": "images/2404956.jpg",
+        "offset": 7869234287
+      },
+      "sha256": "b474c5a97ccbcceac984cca85577774b0cb50d74faa091eeeb1c75243cb9fe8f"
+    },
+    {
+      "image_id": "2349662",
+      "query_descriptions": {
+        "0": "coat worn by the skier holding poles out to the sides",
+        "1": "jacket worn by the skier holding hands near the face"
+      },
+      "note": "Selected after final 256px review; replaces 2371372 whose mask leaked onto face. No model output inspected.",
+      "archive_member": {
+        "bytes": 99742,
+        "compressed_bytes": 99670,
+        "compression": 8,
+        "crc32": 1092788358,
+        "name": "images/2349662.jpg",
+        "offset": 6159808762
+      },
+      "sha256": "c7cffdb25ad38c0e1e04be0a33a9641cbb5c42c354471e4f49a67f363233ae58"
+    },
+    {
+      "image_id": "2409558",
+      "query_descriptions": {
+        "0": "plate directly in front of the child",
+        "1": "small dish farthest from the child"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 126377,
+        "compressed_bytes": 125806,
+        "compression": 8,
+        "crc32": 2903713126,
+        "name": "images/2409558.jpg",
+        "offset": 18508995093
+      },
+      "sha256": "208f5e8b8705bd6a8ed8bfd9521d492f5f44102e5ee1ccb0d10bcc658c7dce7c"
+    },
+    {
+      "image_id": "2400440",
+      "query_descriptions": {
+        "0": "cloth draped over the elephant's back",
+        "1": "jacket worn by the person standing beside the elephant"
+      },
+      "note": "Viewed source, both edits and masks; explicit part and non-color reference used where needed.",
+      "archive_member": {
+        "bytes": 173249,
+        "compressed_bytes": 173146,
+        "compression": 8,
+        "crc32": 241540986,
+        "name": "images/2400440.jpg",
+        "offset": 13072835277
+      },
+      "sha256": "1cda956c918feeda2b15bfe06b648ed0eeb80273ed129f6ff6caccd1def652d8"
+    },
+    {
+      "image_id": "2411438",
+      "query_descriptions": {
+        "0": "colored panel of the surfboard carried by the standing person",
+        "1": "colored fabric of the shorts worn by the child wearing a cap"
+      },
+      "note": "Source, edits and masks visually checked; stable part-specific descriptions supplied.",
+      "archive_member": {
+        "bytes": 164510,
+        "compressed_bytes": 163917,
+        "compression": 8,
+        "crc32": 4090908310,
+        "name": "images/2411438.jpg",
+        "offset": 16099047643
+      },
+      "sha256": "260cb180b436d3005bcce7a58a63a462241a86a9190d8fc203ecbe1dc4fbf625"
+    },
+    {
+      "image_id": "2410977",
+      "query_descriptions": {
+        "0": "t-shirt worn by the man wearing sunglasses",
+        "1": "cap worn by the man wearing sunglasses"
+      },
+      "note": "Source, edits and masks visually checked; stable part-specific descriptions supplied.",
+      "archive_member": {
+        "bytes": 128950,
+        "compressed_bytes": 120728,
+        "compression": 8,
+        "crc32": 3841013623,
+        "name": "images/2410977.jpg",
+        "offset": 8304366747
+      },
+      "sha256": "675b74ab267388b0341c8388d636c292e7435be23295e2a50a06588cd73b452a"
+    },
+    {
+      "image_id": "2407415",
+      "query_descriptions": {
+        "0": "front body panels of the bus",
+        "1": "coat worn by the person standing beside the front of the bus"
+      },
+      "note": "Source, edits and masks visually checked; stable part-specific descriptions supplied.",
+      "archive_member": {
+        "bytes": 138954,
+        "compressed_bytes": 138641,
+        "compression": 8,
+        "crc32": 2643701544,
+        "name": "images/2407415.jpg",
+        "offset": 14194042285
+      },
+      "sha256": "44f59c47f05d3187582dbbb413f59fb12da2917871a73962269556637be6ec89"
+    },
+    {
+      "image_id": "2323280",
+      "query_descriptions": {
+        "0": "t-shirt worn by the seated man with dark hair",
+        "1": "sweater worn by the standing woman with her back to the camera"
+      },
+      "note": "Source, edits and masks visually checked; stable part-specific descriptions supplied.",
+      "archive_member": {
+        "bytes": 143300,
+        "compressed_bytes": 143217,
+        "compression": 8,
+        "crc32": 271399576,
+        "name": "images/2323280.jpg",
+        "offset": 17816025248
+      },
+      "sha256": "8cbafe48e7d809497eda0cebef68a89522d9a5cdc4957809a42447fd68f754d8"
+    },
+    {
+      "image_id": "2323613",
+      "query_descriptions": {
+        "0": "jacket worn by the person walking past the wall",
+        "1": "cap of the fire hydrant"
+      },
+      "note": "Source, edits and masks visually checked; stable part-specific descriptions supplied.",
+      "archive_member": {
+        "bytes": 110739,
+        "compressed_bytes": 110431,
+        "compression": 8,
+        "crc32": 1216048892,
+        "name": "images/2323613.jpg",
+        "offset": 2029315003
+      },
+      "sha256": "5971bd91e8fa79e240b1c59fd164cf0e09765fb0885872d20bf2db6b9cca871e"
+    },
+    {
+      "image_id": "2320659",
+      "query_descriptions": {
+        "0": "jacket worn by the player standing apart from the other two players",
+        "1": "cab of the pickup truck behind the players"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 145147,
+        "compressed_bytes": 145106,
+        "compression": 8,
+        "crc32": 3788915477,
+        "name": "images/2320659.jpg",
+        "offset": 4190337147
+      },
+      "sha256": "dea2ea99dcfd00b88dd3c4353fa6302f00ffa97fe361ffd10b12243df58ef9a6"
+    },
+    {
+      "image_id": "2351392",
+      "query_descriptions": {
+        "0": "fire hydrant",
+        "1": "shirt worn by the police officer"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 146044,
+        "compressed_bytes": 145261,
+        "compression": 8,
+        "crc32": 3171695549,
+        "name": "images/2351392.jpg",
+        "offset": 8044787986
+      },
+      "sha256": "15f28ba2342c6260bad9d2402227667de5ea125f0c95502c4ae01d8767af5b86"
+    },
+    {
+      "image_id": "2347526",
+      "query_descriptions": {
+        "0": "visible jeans worn by the person lying in the armchair",
+        "1": "pillow resting on the back of the armchair"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 143129,
+        "compressed_bytes": 142526,
+        "compression": 8,
+        "crc32": 1393227105,
+        "name": "images/2347526.jpg",
+        "offset": 8555375285
+      },
+      "sha256": "5271300abd9cf95f8e858336d4e5899766f838bb7d634c5680745ddfc522e086"
+    },
+    {
+      "image_id": "2398649",
+      "query_descriptions": {
+        "0": "shirt worn by the child",
+        "1": "patterned rug on the floor"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 85873,
+        "compressed_bytes": 85265,
+        "compression": 8,
+        "crc32": 3364767357,
+        "name": "images/2398649.jpg",
+        "offset": 18791219986
+      },
+      "sha256": "71b8d609b07326088286bb3045030890d9c24b19db412da9061ba111fab3c2db"
+    },
+    {
+      "image_id": "2327493",
+      "query_descriptions": {
+        "0": "helmet worn by the batter",
+        "1": "upper part of the jacket worn by the standing person behind the batter"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 129223,
+        "compressed_bytes": 128580,
+        "compression": 8,
+        "crc32": 2868601831,
+        "name": "images/2327493.jpg",
+        "offset": 4185553774
+      },
+      "sha256": "2925ce568ea7203e71bb08c90435d8a81ea1729b2e647a12d734eea96e268682"
+    },
+    {
+      "image_id": "2370499",
+      "query_descriptions": {
+        "0": "heart-shaped pillow beside the couch",
+        "1": "visible jeans worn by the person lying on the couch"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 143864,
+        "compressed_bytes": 143284,
+        "compression": 8,
+        "crc32": 1676149642,
+        "name": "images/2370499.jpg",
+        "offset": 6902053009
+      },
+      "sha256": "8482cd2ed3e793b6e7fdd14199a4eaf72a1061e1f5822e6a0799412e5190215d"
+    },
+    {
+      "image_id": "2317004",
+      "query_descriptions": {
+        "0": "shirt worn by the person leaning toward the children",
+        "1": "backpack on the grass"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 151796,
+        "compressed_bytes": 151766,
+        "compression": 8,
+        "crc32": 827316866,
+        "name": "images/2317004.jpg",
+        "offset": 2098293097
+      },
+      "sha256": "7e380d4a76a95776aaf4e1b27fa52838dad547a9e2ac289298c9e9c3537091aa"
+    },
+    {
+      "image_id": "2396673",
+      "query_descriptions": {
+        "0": "scarf worn by the woman",
+        "1": "jeans worn by the person walking toward the camera"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 171797,
+        "compressed_bytes": 171211,
+        "compression": 8,
+        "crc32": 913019213,
+        "name": "images/2396673.jpg",
+        "offset": 10129245278
+      },
+      "sha256": "24e5e8079e1afb41b14de905f0f60db86c6a72088a19a17b2f591abae0900a82"
+    },
+    {
+      "image_id": "2369952",
+      "query_descriptions": {
+        "0": "surfboard under the surfer's feet",
+        "1": "short sleeve of the surfer's shirt"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 198442,
+        "compressed_bytes": 193448,
+        "compression": 8,
+        "crc32": 1720184309,
+        "name": "images/2369952.jpg",
+        "offset": 16874911370
+      },
+      "sha256": "ba0007803ad92b7faf9e0a3e159e595aed38c641b141f93d4675be97ce77b812"
+    },
+    {
+      "image_id": "2396892",
+      "query_descriptions": {
+        "0": "largest umbrella above the people",
+        "1": "shoulder bag carried by the woman nearest the camera"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 144232,
+        "compressed_bytes": 143574,
+        "compression": 8,
+        "crc32": 1969842115,
+        "name": "images/2396892.jpg",
+        "offset": 11015317227
+      },
+      "sha256": "8f5e46db063c43375ec405ab944acaa39f0acf4cd7abeb0ba357218025809d65"
+    },
+    {
+      "image_id": "2319784",
+      "query_descriptions": {
+        "0": "shorts worn by the standing person",
+        "1": "door behind the standing person"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 144789,
+        "compressed_bytes": 144671,
+        "compression": 8,
+        "crc32": 4235024281,
+        "name": "images/2319784.jpg",
+        "offset": 930905692
+      },
+      "sha256": "c09013178996c39a0a5b964fe9ae54855d1bb58d6f019f0cbd25327722eb7c89"
+    },
+    {
+      "image_id": "2372180",
+      "query_descriptions": {
+        "0": "fire hydrant",
+        "1": "jeans worn by the person bending over beside the hydrant"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 194839,
+        "compressed_bytes": 194805,
+        "compression": 8,
+        "crc32": 4026082060,
+        "name": "images/2372180.jpg",
+        "offset": 10998927769
+      },
+      "sha256": "f3c39e0bc3301840ef05cb81a4c5cdf74aea20f2c1acd34098086c08ca2fe0b5"
+    },
+    {
+      "image_id": "2410852",
+      "query_descriptions": {
+        "0": "painted body of the car approaching the foreground",
+        "1": "bus in the background"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 129998,
+        "compressed_bytes": 129855,
+        "compression": 8,
+        "crc32": 1708241841,
+        "name": "images/2410852.jpg",
+        "offset": 11759670617
+      },
+      "sha256": "732d8c0c8a5f7348f51c7ad0863b3853febb195236eaf03170b4cbd21ccf58ab"
+    },
+    {
+      "image_id": "2399291",
+      "query_descriptions": {
+        "0": "shirt worn by the surfer",
+        "1": "colored rim of the surfboard under the surfer"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 167759,
+        "compressed_bytes": 167722,
+        "compression": 8,
+        "crc32": 127081631,
+        "name": "images/2399291.jpg",
+        "offset": 6403563225
+      },
+      "sha256": "456f7de429b5098dcf0b4d18784f007ca34cd1595c24b725c55d377327dd0c48"
+    },
+    {
+      "image_id": "2317615",
+      "query_descriptions": {
+        "0": "cap worn by the person playing with the dog",
+        "1": "shorts worn by the person playing with the dog"
+      },
+      "note": "Both edits and masks visually inspected; part-specific phrasing used where needed.",
+      "archive_member": {
+        "bytes": 132255,
+        "compressed_bytes": 127084,
+        "compression": 8,
+        "crc32": 1249425112,
+        "name": "images/2317615.jpg",
+        "offset": 3160006902
+      },
+      "sha256": "8abd7bbb1512b26c34785e010f2075257198c3fdcd8c7d09e1d3d1320e6f392c"
+    },
+    {
+      "image_id": "2335051",
+      "query_descriptions": {
+        "0": "cup on the kitchen counter",
+        "1": "shirt worn by the woman with short dark hair"
+      },
+      "note": "Source, both edits and masks visually checked; stable object/part description.",
+      "archive_member": {
+        "bytes": 125682,
+        "compressed_bytes": 125654,
+        "compression": 8,
+        "crc32": 4072168976,
+        "name": "images/2335051.jpg",
+        "offset": 16025709859
+      },
+      "sha256": "32e418a6cf4e11b3603de1cb848e2c044afa7a9685c4ef82e69fee87caccfd47"
+    },
+    {
+      "image_id": "2390560",
+      "query_descriptions": {
+        "0": "sweater worn by the teddy bear behind the plate",
+        "1": "lid of the jar beside the plate"
+      },
+      "note": "Source, both edits and masks visually checked; stable object/part description.",
+      "archive_member": {
+        "bytes": 157745,
+        "compressed_bytes": 157715,
+        "compression": 8,
+        "crc32": 653918845,
+        "name": "images/2390560.jpg",
+        "offset": 7454276137
+      },
+      "sha256": "915ecd069d36070777109db93a0a322a7f16be7f8e9a1278d13d54a31698d2d8"
+    },
+    {
+      "image_id": "1220",
+      "query_descriptions": {
+        "0": "carpet in front of the winners' podium",
+        "1": "front panel of the jacket worn by the person on the medium-height podium"
+      },
+      "note": "Source, both edits and masks visually checked; stable object/part description.",
+      "archive_member": {
+        "bytes": 84431,
+        "compressed_bytes": 84169,
+        "compression": 8,
+        "crc32": 1448709545,
+        "name": "images/1220.jpg",
+        "offset": 7098234794
+      },
+      "sha256": "8c951cde78fec0dfe381a6554178b49a43c022cf72fecce2801a1732bc97b940"
+    },
+    {
+      "image_id": "2367683",
+      "query_descriptions": {
+        "0": "front panel of the cardigan worn by the woman with white hair",
+        "1": "top worn by the woman with her dark hair tied back"
+      },
+      "note": "Final QA confirms recoloring is concentrated on the cardigan front panel; query explicitly names that part, not the whole garment.",
+      "archive_member": {
+        "bytes": 171920,
+        "compressed_bytes": 171856,
+        "compression": 8,
+        "crc32": 2183216940,
+        "name": "images/2367683.jpg",
+        "offset": 11270855740
+      },
+      "sha256": "ec5f6098d87e6e580c5194f06694b61d6475645875e97acfcaaae35879a6e46e"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{Related analyses differ in the information sources and routes they separate.} We vary each entry's evidence separately to distinguish influence (under conflict or degraded main), recovery, and which entry a model can lose.}
+\label{tab:related_work}
+\begingroup
+\fontsize{9}{10.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.16\linewidth}>{\raggedright\arraybackslash}p{.30\linewidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\rowcolor{DSTableHeader}
+Study & What is separated? & Question or finding \\
+\midrule
+Zhang et al.\ [50] & Image, question, and final-token positions & Two stages transfer global and question-relevant visual information into question representations. \\
+\addlinespace[3pt]
+Salazar et al.\ [39] & Direct image-token and text-mediated pathways & Pathway use depends on task and prompt; text mediation can support fallback. \\
+\addlinespace[3pt]
+Ghosh et al.\ [11] & Conflicting image and text sources & Generation and likelihood margins reveal task-dependent reliance shifts under degradation, including after accuracy-loss calibration. \\
+\addlinespace[3pt]
+Rahman\ [38] & Visual sequence and positional order & Similar temporal scores conceal different channel reliance and failure modes. \\
+\addlinespace[3pt]
+Cui et al.\ [7] & Visual ordering and language-model backup representations & Visual ordering supports spatial binding; amplifying it improves natural-image spatial judgments. \\
+\addlinespace[3pt]
+\rowcolor{DSTableAccent}
+Our work & Main and later visual entries & Later dominates in DeepStack, main in Qwen3-VL; main quality changes later influence; recovery and entry removal vary by model. \\
+\bottomrule
+\end{tabularx}
+\endgroup
+\end{table*}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "model": {
+    "id": "google/gemma-4-12B-it",
+    "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+    "class": "Gemma4UnifiedForConditionalGeneration",
+    "total_parameters": 11959730224
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "dtype": "bfloat16",
+    "attn_implementation": "eager",
+    "seed": 20260928
+  },
+  "processor": {
+    "kind": "gemma4_unified",
+    "max_soft_tokens": 280,
+    "backend": "torchvision"
+  },
+  "prompt": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "suffix": ""
+  },
+  "generation": {
+    "enabled": true,
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "num_beams": 1,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "use_cache": true
+  },
+  "parsing": {
+    "strategy": "strict_final"
+  },
+  "intervention": {
+    "kind": "native"
+  },
+  "conditions": [
+    "native"
+  ],
+  "selection": {
+    "offset": 0,
+    "limit": 2,
+    "ids": []
+  },
+  "scoring": {
+    "max_sequence": 4096
+  },
+  "validation": {
+    "score_atol": 0.001,
+    "audit_items": 1
+  }
+}

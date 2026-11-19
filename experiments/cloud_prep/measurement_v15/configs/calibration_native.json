@@ -1,0 +1,19 @@
+{
+  "execution_version": "v15-calibration-native-batched-1",
+  "families": [
+    "recovery"
+  ],
+  "generate_tokens": 32,
+  "severity_labels": null,
+  "recovery_cells": "native_only",
+  "main_sources": {
+    "normal": "a"
+  },
+  "recovery_sources": {
+    "clean": "a"
+  },
+  "severity_sources": "row",
+  "batch_conditions": true,
+  "cross_query_cache": true,
+  "max_batch": 8
+}

@@ -1,0 +1,8 @@
+{
+  "execution_version": "v14-benchmark-recovery-batched-1",
+  "families": ["recovery"],
+  "readouts": [{"response_format": "freeform", "mapping": "none"}],
+  "generate_tokens": 64,
+  "batch_conditions": true,
+  "cross_query_cache": true
+}

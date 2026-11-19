@@ -1,0 +1,38 @@
+{
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "total_parameters": 8767123696,
+  "weight_sha256": {},
+  "role": "First round common native image/natural-answer arm; Qwen v3 mechanism runners retained",
+  "family": "qwen3_vl",
+  "model_class": "Qwen3VLForConditionalGeneration",
+  "runtime": {
+    "dtype": "bfloat16",
+    "attn_implementation": "sdpa"
+  },
+  "processor": {
+    "kind": "qwen",
+    "min_pixels": 4096,
+    "max_pixels": 262144,
+    "use_fast": false
+  },
+  "readout": {
+    "formats": [
+      "base",
+      "strict_letters",
+      "strict_digits"
+    ],
+    "max_sequence": 8192
+  },
+  "generation": {
+    "do_sample": false,
+    "num_beams": 1,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 64
+  },
+  "conditions": [
+    "native"
+  ]
+}

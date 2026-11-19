@@ -1,0 +1,25 @@
+{
+  "execution_version": "v15-benchmark-calibration-native-batched-1",
+  "families": [
+    "recovery"
+  ],
+  "readouts": [
+    {
+      "response_format": "freeform",
+      "mapping": "none"
+    }
+  ],
+  "generate_tokens": 64,
+  "severity_labels": null,
+  "recovery_cells": "native_only",
+  "main_sources": {
+    "normal": "a"
+  },
+  "recovery_sources": {
+    "clean": "a"
+  },
+  "severity_sources": "row",
+  "batch_conditions": true,
+  "cross_query_cache": true,
+  "max_batch": 8
+}

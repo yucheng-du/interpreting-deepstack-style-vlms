@@ -1,0 +1,85 @@
+{
+  "gqa_questions": {
+    "url": "https://downloads.cs.stanford.edu/nlp/data/gqa/questions1.2.zip",
+    "bytes": 1498616372,
+    "members": {
+      "val_balanced_questions.json": "2f675643c0cfffe0485dbae0c0c0dfc16b547443309a98544502bc1ae87c0779",
+      "train_balanced_questions.json": null
+    },
+    "note": "val sha256 equals the executed v14/v15 acquisition; train sha256 is recorded in the receipt at first acquisition"
+  },
+  "gqa_images_zip": {
+    "url": "https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip",
+    "bytes": 21817965542,
+    "index": "gqa_image_zip_index.json (148,854 members, crc32/size/offset; sha256 bbc747755b790ac3b0e6cc6b54c0c3ed61380ffb1c7e658a6a308ad88c5f5c57)"
+  },
+  "gqa_images_hf": {
+    "repo": "lmms-lab-encoder/GQA",
+    "revision": "a6e72d6e1b912da88af8b2f9eba05d5ea8ec2dd8",
+    "files": {
+      "val": {
+        "val_balanced_images/val-00000-of-00003.parquet": ["ef0b4c8305a08c8fafabe2e0b0d03fe76446565ed8e44547f7654c549d9a5a36", 483005189],
+        "val_balanced_images/val-00001-of-00003.parquet": ["c8d12114fb11dbf243cb665dd32db7b2846db4dda2a241e59821b01d30b38409", 482535279],
+        "val_balanced_images/val-00002-of-00003.parquet": ["e792d97d8e4320a2f16ba55b2121ccc37ab4d812da3df3cb545a2319ea864c49", 477493451]
+      },
+      "train": {
+        "train_balanced_images/train-00000-of-00021.parquet": ["c87d87e2403994e600f43c758410904df39381e257222ee9709159ade6a5f6dd", 487234978],
+        "train_balanced_images/train-00001-of-00021.parquet": ["fd7bdfe586172bceb8e5be8cc09796bc2a5ce49233edcb0af9eaad2db7ea9378", 483098565],
+        "train_balanced_images/train-00002-of-00021.parquet": ["ba6f56e2afdfece21a1b89d930982ad4b3908e7052e5ff89bf98970c31045794", 493941868],
+        "train_balanced_images/train-00003-of-00021.parquet": ["afe99357fc5b2b85719b6fbd940460ea82743871f999795d3aea9ee64d01f68c", 481475350],
+        "train_balanced_images/train-00004-of-00021.parquet": ["db80e8af949872ecddcb32123e7fb437a240e02b9c74fc57c1eec2ae0378a867", 490590628],
+        "train_balanced_images/train-00005-of-00021.parquet": ["8f9cb85de604dcda0933e1c5981a22bb82448ef1049bf29d09814bfd5be317cf", 498969912],
+        "train_balanced_images/train-00006-of-00021.parquet": ["2bb35dfd283bef7b31f3cc60c5ff627f8b24e7c9df32c9ed16cfb1f3e6725aee", 494279872],
+        "train_balanced_images/train-00007-of-00021.parquet": ["e16063ab0be6c902e66da389610475d6fce104054b7c775f17f435307bdea950", 487683637],
+        "train_balanced_images/train-00008-of-00021.parquet": ["cf4a2f50c763f68bdc700ff5c3d7b3dd152bbb19500a8afd459d437b334d0c3f", 490515147],
+        "train_balanced_images/train-00009-of-00021.parquet": ["a7d0cebd92c296181821345a077117c66280b2ba1ee75af1fa2889b8e40a587b", 491375619],
+        "train_balanced_images/train-00010-of-00021.parquet": ["142c6cb39e051cc26e36cdfcc25c42ef27e71a56158bd7a9b3949714ab776771", 480455329],
+        "train_balanced_images/train-00011-of-00021.parquet": ["ac92a4866c37fda006b8ab425712e353c8b1e510b374e5577f5b1b92b1275458", 479390750],
+        "train_balanced_images/train-00012-of-00021.parquet": ["0053f0b96fe1e6f36ea6debe50a7d9d2cb459185249a215bfc21ebd532cb8ffb", 478762037],
+        "train_balanced_images/train-00013-of-00021.parquet": ["9fe07ca70a0d068f989db2ee14166fe6485faa8896c27010b2bcf2befe8b7c4e", 476230158],
+        "train_balanced_images/train-00014-of-00021.parquet": ["f44b0a7535134c0e4baf6a5d352b43473d18eb69d229c2423b2fb36e589e374a", 486669585],
+        "train_balanced_images/train-00015-of-00021.parquet": ["16a69d59ee866cf032c606e7f752d6a32a4e62af34df5b0c84ea8b5a2a139655", 475267931],
+        "train_balanced_images/train-00016-of-00021.parquet": ["fe41ee8b6c5a3d5790e217c58e8fc5f1f236aaaba045842020b4d5b8a0edd726", 478172118],
+        "train_balanced_images/train-00017-of-00021.parquet": ["c646caa720ba1205dacb04982dc05180502816bfffe1e8af80e5714bcabd4d3a", 482811687],
+        "train_balanced_images/train-00018-of-00021.parquet": ["b7e206b80873267382ad03d3d31ace9051a21ac729ab9286bd6127f359a6e152", 472527031],
+        "train_balanced_images/train-00019-of-00021.parquet": ["e4f379d4894f5dbcfa4ca7c358d57ec8ed27d6aca8624bedcc35a8f8d6847a7d", 479824237],
+        "train_balanced_images/train-00020-of-00021.parquet": ["9ec2912f483e760880207c93063eb214d05286e721b07801e4070ed3a71eb62f", 482350832]
+      }
+    }
+  },
+  "docvqa_hf": {
+    "repo": "lmms-lab-encoder/DocVQA",
+    "revision": "539088ef8a8ada01ac8e2e6d4e372586748a265e",
+    "files": {
+      "validation": {
+        "DocVQA/validation-00000-of-00006.parquet": ["a31507f0b700ac64f3ead52057c5dc3ccfb0baadcc62bc0d19d17159f080a4d8", 114817746],
+        "DocVQA/validation-00001-of-00006.parquet": ["ce63ba45f11bfb4e17362f9c073984b4c6c84a0e966ba3d33a86fa285a1fb3dc", 160435747],
+        "DocVQA/validation-00002-of-00006.parquet": ["2d580a39996ad05226ad462f2d31bad0df02f0f47f46263d96ad8df584a5667b", 184452290],
+        "DocVQA/validation-00003-of-00006.parquet": ["588a587567d1548a174b83b160132d97eb2b12a7d57374675d3c45b431403354", 177861893],
+        "DocVQA/validation-00004-of-00006.parquet": ["b43b8aa3e28a1b0f8728243fdf776b798a684b5baafb27d6a734edbbe3983302", 206232388],
+        "DocVQA/validation-00005-of-00006.parquet": ["5bba6d5f7b8e6ee0b64df2e4c2885f93cd759c732998e4d6f9b86ce4c690fcf2", 212034964]
+      },
+      "train": {
+        "DocVQA/train-00000-of-00012.parquet": ["37bde9b3f93add0cf47c980897eee7971cbf6b661b632a168359e35ff3c136f4", 616602754],
+        "DocVQA/train-00001-of-00012.parquet": ["99b528d5a28d3496eb198e21ef10377d4fc94dcc0c5d4e9de03f816074933414", 94630890],
+        "DocVQA/train-00002-of-00012.parquet": ["357128e27abad13d59f2ff1725005079078c3de5e8976bdd6c18d9300ef84441", 93607033],
+        "DocVQA/train-00003-of-00012.parquet": ["9f05b9bb30aa9467178d7505757cd7582d07cb44d421e31556f8d27334642e42", 327482106],
+        "DocVQA/train-00004-of-00012.parquet": ["09af2ebb14b99e4fea2a80314a6ed98705c54dc39ddbe02daf15d41f50ebd733", 798907355],
+        "DocVQA/train-00005-of-00012.parquet": ["0ba8fef50a814c9a50fb4b60b2547ae0484d995599b0f488565800e01ecb5282", 1039426177],
+        "DocVQA/train-00006-of-00012.parquet": ["fdf114fe2552cedbd7fffa5a72e91c0fd494ab7e35d850c8b8c8e18d2a7f0e99", 1010826516],
+        "DocVQA/train-00007-of-00012.parquet": ["72c7d97cb713070ee24a8b7588ac6c861ac36bd516d2e6abb892afac74bc7ada", 1159424589],
+        "DocVQA/train-00008-of-00012.parquet": ["adabcb963a6e5fa219a2407401a5cf4765933ba748ee23517a0e58eb4f31e992", 417595455],
+        "DocVQA/train-00009-of-00012.parquet": ["738a196376279e188264db1163e43dc4d21b1982e60a65d46d6ce7ac6a0765e2", 730465380],
+        "DocVQA/train-00010-of-00012.parquet": ["66ce2781f362621ca0bf32e55ba39a384708c76331b31aaee67a3bae19c5927d", 309937202],
+        "DocVQA/train-00011-of-00012.parquet": ["58c475ce1f8e49650ec56fb2ab5d8041ac0106fca954b775ca03c705d22cefe3", 793766611]
+      }
+    }
+  },
+  "docvqa_official": {
+    "qas_zip": ["spdocvqa_qas.zip", "546be9fd4ed6aff9d5a76a5120a71738a010833fa71dc919d5b8ead8e65ad85d"],
+    "images_tar_bytes": ["spdocvqa_images.tar.gz", 8580231801],
+    "val_member": ["val_v1.0_withQT.json", "2bbf447a9b187ef65c76ea8d08d6d941c5a938f2de4bc89da33f9925a8b41a9d"],
+    "train_member": ["train_v1.0_withQT.json", null],
+    "note": "RRC Task 1 files need an RRC login; the user places them, nothing is downloaded by the scripts"
+  }
+}

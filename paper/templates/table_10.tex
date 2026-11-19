@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{At common-low dose, neither Qwen model keeps generation selectivity.} Entry decomposition for color, direct answers, $M0$, $\alpha=1$. Each cell gives a mean above its descriptive normal 95\% interval; every estimate uses 32 complete templates. All-later contains the three later entries and excludes main. The rightmost column within each endpoint is the directly paired $R_{\mathrm{main}}-R_{\mathrm{all}}$. Rows labeled Low use common-low matching: the minimum native singleton dose at the shared source-$a$ baseline. Under RSS (shaded rows), the small matched score contrast is positive for Qwen8 and negative for Qwen32.}
+\label{tab:p4}
+\begingroup
+\fontsize{9}{10.5}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabularx}{\linewidth}{@{}l*{6}{>{\centering\arraybackslash}X}@{}}
+\toprule
+& \multicolumn{3}{c}{Score ($n=32$ per estimate)} & \multicolumn{3}{c}{Generation ($n=32$ per estimate)} \\
+\cmidrule(lr){2-4}\cmidrule(l){5-7}
+\rowcolor{DSTableHeader}
+Dose & $R_{\mathrm{main}}$ & $R_{\mathrm{all}}$ & Main $-$ all & $R_{\mathrm{main}}$ & $R_{\mathrm{all}}$ & Main $-$ all \\
+\midrule
+@@ROWS@@
+\bottomrule
+\end{tabularx}
+\endgroup
+\end{table*}

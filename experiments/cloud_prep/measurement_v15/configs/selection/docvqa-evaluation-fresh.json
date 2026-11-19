@@ -1,0 +1,1994 @@
+{
+ "schema": "followup-benchmark-selection-plan-v15",
+ "mode": "official",
+ "benchmark": "docvqa",
+ "task": "docvqa_document_qa",
+ "split": "evaluation",
+ "material_set": "evaluation-fresh-docvqa_document_qa",
+ "seed": 20261029,
+ "calibration_fraction": 0.25,
+ "max_units": 192,
+ "max_questions_per_unit": 2,
+ "rule": "pool: sha256('seed|split|benchmark|unit_id') first 15 hex / 16**15 < calibration_fraction -> calibration, else evaluation; units: ascending sha256('seed|unit|task|unit_id'); questions: ascending sha256('seed|question|task|question_id')",
+ "input_dataset_header": {
+  "dataset_name": "SP-DocVQA",
+  "dataset_split": "val",
+  "dataset_version": "1.0"
+ },
+ "exclusions": [
+  {
+   "flag": "--exclude-unit-ids",
+   "file_name": "v14-docvqa.json",
+   "sha256": "ab96acf8d7bec168cd7aaba0aaa50605416337eb7893cb104b67364943383012",
+   "ids": 256,
+   "units_matched": 256
+  },
+  {
+   "flag": "--exclude-unit-ids",
+   "file_name": "calibration-v14reuse-docvqa.json",
+   "sha256": "8fa85730f0e8db165cac656e041a3fc87aa68246f052f6085670e35854cab032",
+   "ids": 48,
+   "units_matched": 48
+  },
+  {
+   "flag": "--exclude-image-ids",
+   "file_name": "v14-docvqa.json",
+   "sha256": "ab96acf8d7bec168cd7aaba0aaa50605416337eb7893cb104b67364943383012",
+   "ids": 296,
+   "units_matched": 256
+  }
+ ],
+ "counts": {
+  "eligible_questions": 3765,
+  "eligible_units": 682,
+  "pool_units": 513,
+  "other_pool_units": 169,
+  "selected_units": 192,
+  "remaining_pool_units": 321,
+  "selected_questions": 373,
+  "selected_images": 216,
+  "dropped": {
+   "excluded_unit": 1584
+  }
+ },
+ "units": [
+  {
+   "unit_id": "docvqa-document-fhng0227",
+   "question_ids": [
+    "40788"
+   ],
+   "image_files": [
+    "documents/fhng0227_16.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fhwc0228",
+   "question_ids": [
+    "51769",
+    "51770"
+   ],
+   "image_files": [
+    "documents/fhwc0228_12.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fhxn0226",
+   "question_ids": [
+    "43800",
+    "43813"
+   ],
+   "image_files": [
+    "documents/fhxn0226_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fjyn0081",
+   "question_ids": [
+    "56776",
+    "56777"
+   ],
+   "image_files": [
+    "documents/fjyn0081_24.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fkgv0228",
+   "question_ids": [
+    "21035",
+    "21036"
+   ],
+   "image_files": [
+    "documents/fkgv0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fkxn0226",
+   "question_ids": [
+    "42300",
+    "42301"
+   ],
+   "image_files": [
+    "documents/fkxn0226_14.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-flmh0077",
+   "question_ids": [
+    "55080",
+    "55082"
+   ],
+   "image_files": [
+    "documents/flmh0077_12.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-flym0000",
+   "question_ids": [
+    "6814",
+    "6815"
+   ],
+   "image_files": [
+    "documents/flym0000_7.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fmjm0223",
+   "question_ids": [
+    "64250",
+    "64296"
+   ],
+   "image_files": [
+    "documents/fmjm0223_46.png",
+    "documents/fmjm0223_79.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fncf0227",
+   "question_ids": [
+    "63636",
+    "63637"
+   ],
+   "image_files": [
+    "documents/fncf0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fpkm0227",
+   "question_ids": [
+    "27852",
+    "27859"
+   ],
+   "image_files": [
+    "documents/fpkm0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fqpb0228",
+   "question_ids": [
+    "51021",
+    "51024"
+   ],
+   "image_files": [
+    "documents/fqpb0228_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fqwx0225",
+   "question_ids": [
+    "5597",
+    "5604"
+   ],
+   "image_files": [
+    "documents/fqwx0225_10.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fqyf0227",
+   "question_ids": [
+    "61578",
+    "61579"
+   ],
+   "image_files": [
+    "documents/fqyf0227_15.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-frjh0225",
+   "question_ids": [
+    "5557",
+    "5558"
+   ],
+   "image_files": [
+    "documents/frjh0225_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fthw0228",
+   "question_ids": [
+    "32348"
+   ],
+   "image_files": [
+    "documents/fthw0228_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-fyvw0217",
+   "question_ids": [
+    "58296",
+    "58297"
+   ],
+   "image_files": [
+    "documents/fyvw0217_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gfhd0082",
+   "question_ids": [
+    "58105",
+    "58107"
+   ],
+   "image_files": [
+    "documents/gfhd0082_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gfyc0227",
+   "question_ids": [
+    "64680",
+    "64683"
+   ],
+   "image_files": [
+    "documents/gfyc0227_144.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ggmx0225",
+   "question_ids": [
+    "52556",
+    "52559"
+   ],
+   "image_files": [
+    "documents/ggmx0225_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gjgx0227",
+   "question_ids": [
+    "29707",
+    "29709"
+   ],
+   "image_files": [
+    "documents/gjgx0227_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gkvh0227",
+   "question_ids": [
+    "63656",
+    "63657"
+   ],
+   "image_files": [
+    "documents/gkvh0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-glbv0228",
+   "question_ids": [
+    "59444"
+   ],
+   "image_files": [
+    "documents/glbv0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gmgl0228",
+   "question_ids": [
+    "5439",
+    "5442"
+   ],
+   "image_files": [
+    "documents/gmgl0228_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gmhn0020",
+   "question_ids": [
+    "8046",
+    "8049"
+   ],
+   "image_files": [
+    "documents/gmhn0020_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gmjf0226",
+   "question_ids": [
+    "1183",
+    "1184"
+   ],
+   "image_files": [
+    "documents/gmjf0226_4.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gmwn0226",
+   "question_ids": [
+    "43599",
+    "43611"
+   ],
+   "image_files": [
+    "documents/gmwn0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gpfl0225",
+   "question_ids": [
+    "52290",
+    "5593"
+   ],
+   "image_files": [
+    "documents/gpfl0225_5.png",
+    "documents/gpfl0225_7.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-grxw0228",
+   "question_ids": [
+    "59438",
+    "59452"
+   ],
+   "image_files": [
+    "documents/grxw0228_22.png",
+    "documents/grxw0228_44.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gsgj0223",
+   "question_ids": [
+    "55414",
+    "56034"
+   ],
+   "image_files": [
+    "documents/gsgj0223_65.png",
+    "documents/gsgj0223_83.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gtjc0228",
+   "question_ids": [
+    "61639",
+    "61641"
+   ],
+   "image_files": [
+    "documents/gtjc0228_4.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gxmw0227",
+   "question_ids": [
+    "60954",
+    "60958"
+   ],
+   "image_files": [
+    "documents/gxmw0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gybw0217",
+   "question_ids": [
+    "45768",
+    "45772"
+   ],
+   "image_files": [
+    "documents/gybw0217_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gyjf0226",
+   "question_ids": [
+    "1022",
+    "19245"
+   ],
+   "image_files": [
+    "documents/gyjf0226_1.png",
+    "documents/gyjf0226_4.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gzgj0223",
+   "question_ids": [
+    "55239",
+    "55252"
+   ],
+   "image_files": [
+    "documents/gzgj0223_16.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-gzyh0227",
+   "question_ids": [
+    "5158",
+    "5165"
+   ],
+   "image_files": [
+    "documents/gzyh0227_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hfmf0227",
+   "question_ids": [
+    "61791",
+    "61794"
+   ],
+   "image_files": [
+    "documents/hfmf0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hgwd0227",
+   "question_ids": [
+    "63533",
+    "63535"
+   ],
+   "image_files": [
+    "documents/hgwd0227_34.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hjxn0226",
+   "question_ids": [
+    "43735",
+    "44797"
+   ],
+   "image_files": [
+    "documents/hjxn0226_57.png",
+    "documents/hjxn0226_72.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hkvd0079",
+   "question_ids": [
+    "58591"
+   ],
+   "image_files": [
+    "documents/hkvd0079_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hldw0228",
+   "question_ids": [
+    "23830"
+   ],
+   "image_files": [
+    "documents/hldw0228_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hljn0226",
+   "question_ids": [
+    "4958",
+    "4959"
+   ],
+   "image_files": [
+    "documents/hljn0226_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hmjf0226",
+   "question_ids": [
+    "1165",
+    "1171"
+   ],
+   "image_files": [
+    "documents/hmjf0226_8.png",
+    "documents/hmjf0226_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hmwl0226",
+   "question_ids": [
+    "45473",
+    "45480"
+   ],
+   "image_files": [
+    "documents/hmwl0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hmxn0226",
+   "question_ids": [
+    "43229",
+    "43265"
+   ],
+   "image_files": [
+    "documents/hmxn0226_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hrfl0079",
+   "question_ids": [
+    "18733",
+    "18736"
+   ],
+   "image_files": [
+    "documents/hrfl0079_8.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hsyn0081",
+   "question_ids": [
+    "16430",
+    "57256"
+   ],
+   "image_files": [
+    "documents/hsyn0081_31.png",
+    "documents/hsyn0081_32.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hthg0227",
+   "question_ids": [
+    "40714",
+    "40717"
+   ],
+   "image_files": [
+    "documents/hthg0227_8.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-htyp0227",
+   "question_ids": [
+    "62075",
+    "62077"
+   ],
+   "image_files": [
+    "documents/htyp0227_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-hzyg0078",
+   "question_ids": [
+    "19089",
+    "19143"
+   ],
+   "image_files": [
+    "documents/hzyg0078_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jfgg0227",
+   "question_ids": [
+    "62388",
+    "62389"
+   ],
+   "image_files": [
+    "documents/jfgg0227_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jhfd0079",
+   "question_ids": [
+    "18821",
+    "18831"
+   ],
+   "image_files": [
+    "documents/jhfd0079_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jkcn0000",
+   "question_ids": [
+    "6397",
+    "6403"
+   ],
+   "image_files": [
+    "documents/jkcn0000_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jkhn0226",
+   "question_ids": [
+    "43728",
+    "43769"
+   ],
+   "image_files": [
+    "documents/jkhn0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jmlh0227",
+   "question_ids": [
+    "5157",
+    "5162"
+   ],
+   "image_files": [
+    "documents/jmlh0227_8.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jqxf0227",
+   "question_ids": [
+    "37659",
+    "37666"
+   ],
+   "image_files": [
+    "documents/jqxf0227_28.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jxkm0080",
+   "question_ids": [
+    "58367"
+   ],
+   "image_files": [
+    "documents/jxkm0080_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jxpj0226",
+   "question_ids": [
+    "5525",
+    "601"
+   ],
+   "image_files": [
+    "documents/jxpj0226_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jyfk0226",
+   "question_ids": [
+    "59979",
+    "59980"
+   ],
+   "image_files": [
+    "documents/jyfk0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-jygp0000",
+   "question_ids": [
+    "6786",
+    "6787"
+   ],
+   "image_files": [
+    "documents/jygp0000_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-khmk0079",
+   "question_ids": [
+    "58782",
+    "58784"
+   ],
+   "image_files": [
+    "documents/khmk0079_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kjmc0079",
+   "question_ids": [
+    "58619",
+    "58622"
+   ],
+   "image_files": [
+    "documents/kjmc0079_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kjnw0228",
+   "question_ids": [
+    "62757",
+    "62771"
+   ],
+   "image_files": [
+    "documents/kjnw0228_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kjvw0217",
+   "question_ids": [
+    "15385",
+    "15386"
+   ],
+   "image_files": [
+    "documents/kjvw0217_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kmwn0226",
+   "question_ids": [
+    "41686",
+    "41691"
+   ],
+   "image_files": [
+    "documents/kmwn0226_18.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kmxn0226",
+   "question_ids": [
+    "43145",
+    "43164"
+   ],
+   "image_files": [
+    "documents/kmxn0226_6.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-krpn0081",
+   "question_ids": [
+    "56080",
+    "56081"
+   ],
+   "image_files": [
+    "documents/krpn0081_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kshm0227",
+   "question_ids": [
+    "47763",
+    "47766"
+   ],
+   "image_files": [
+    "documents/kshm0227_7.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ktlw0227",
+   "question_ids": [
+    "65405",
+    "65406"
+   ],
+   "image_files": [
+    "documents/ktlw0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-kxvh0227",
+   "question_ids": [
+    "65065",
+    "65066"
+   ],
+   "image_files": [
+    "documents/kxvh0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lglg0227",
+   "question_ids": [
+    "65057",
+    "65059"
+   ],
+   "image_files": [
+    "documents/lglg0227_30.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lgpg0227",
+   "question_ids": [
+    "63892",
+    "63893"
+   ],
+   "image_files": [
+    "documents/lgpg0227_11.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lgpj0226",
+   "question_ids": [
+    "784",
+    "786"
+   ],
+   "image_files": [
+    "documents/lgpj0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ljgf0227",
+   "question_ids": [
+    "62130",
+    "62131"
+   ],
+   "image_files": [
+    "documents/ljgf0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ljnl0226",
+   "question_ids": [
+    "45457",
+    "45460"
+   ],
+   "image_files": [
+    "documents/ljnl0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lkgp0000",
+   "question_ids": [
+    "6802",
+    "6805"
+   ],
+   "image_files": [
+    "documents/lkgp0000_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lkvw0217",
+   "question_ids": [
+    "57841",
+    "57845"
+   ],
+   "image_files": [
+    "documents/lkvw0217_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lkwg0227",
+   "question_ids": [
+    "60903",
+    "60904"
+   ],
+   "image_files": [
+    "documents/lkwg0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lmfv0228",
+   "question_ids": [
+    "61775",
+    "61779"
+   ],
+   "image_files": [
+    "documents/lmfv0228_10.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lmmf0227",
+   "question_ids": [
+    "64770",
+    "65117"
+   ],
+   "image_files": [
+    "documents/lmmf0227_2.png",
+    "documents/lmmf0227_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lnbl0226",
+   "question_ids": [
+    "60427",
+    "60436"
+   ],
+   "image_files": [
+    "documents/lnbl0226_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lnwg0227",
+   "question_ids": [
+    "63146",
+    "63264"
+   ],
+   "image_files": [
+    "documents/lnwg0227_24.png",
+    "documents/lnwg0227_29.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lpjm0223",
+   "question_ids": [
+    "64272",
+    "64276"
+   ],
+   "image_files": [
+    "documents/lpjm0223_56.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lsgj0223",
+   "question_ids": [
+    "59292",
+    "59369"
+   ],
+   "image_files": [
+    "documents/lsgj0223_65.png",
+    "documents/lsgj0223_67.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lxpj0226",
+   "question_ids": [
+    "50741",
+    "50748"
+   ],
+   "image_files": [
+    "documents/lxpj0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lxvg0227",
+   "question_ids": [
+    "30048",
+    "30050"
+   ],
+   "image_files": [
+    "documents/lxvg0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lybx0223",
+   "question_ids": [
+    "57171",
+    "57193"
+   ],
+   "image_files": [
+    "documents/lybx0223_37.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lybx0227",
+   "question_ids": [
+    "58408",
+    "58411"
+   ],
+   "image_files": [
+    "documents/lybx0227_19.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lycj0037",
+   "question_ids": [
+    "347",
+    "348"
+   ],
+   "image_files": [
+    "documents/lycj0037_6.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lynb0228",
+   "question_ids": [
+    "55255",
+    "55259"
+   ],
+   "image_files": [
+    "documents/lynb0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-lzlk0226",
+   "question_ids": [
+    "51584",
+    "51586"
+   ],
+   "image_files": [
+    "documents/lzlk0226_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mfmf0227",
+   "question_ids": [
+    "63899",
+    "63901"
+   ],
+   "image_files": [
+    "documents/mfmf0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mgbv0228",
+   "question_ids": [
+    "50106",
+    "50114"
+   ],
+   "image_files": [
+    "documents/mgbv0228_13.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mhfd0079",
+   "question_ids": [
+    "58807",
+    "58809"
+   ],
+   "image_files": [
+    "documents/mhfd0079_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mhmw0227",
+   "question_ids": [
+    "61246",
+    "61248"
+   ],
+   "image_files": [
+    "documents/mhmw0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mndw0217",
+   "question_ids": [
+    "45767",
+    "45789"
+   ],
+   "image_files": [
+    "documents/mndw0217_29.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mnfl0228",
+   "question_ids": [
+    "5552",
+    "5555"
+   ],
+   "image_files": [
+    "documents/mnfl0228_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mnvw0217",
+   "question_ids": [
+    "15003",
+    "15007"
+   ],
+   "image_files": [
+    "documents/mnvw0217_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mqvv0228",
+   "question_ids": [
+    "56410",
+    "56411"
+   ],
+   "image_files": [
+    "documents/mqvv0228_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mskw0228",
+   "question_ids": [
+    "50815",
+    "50816"
+   ],
+   "image_files": [
+    "documents/mskw0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mtjm0081",
+   "question_ids": [
+    "16358",
+    "56296"
+   ],
+   "image_files": [
+    "documents/mtjm0081_10.png",
+    "documents/mtjm0081_16.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mxfw0227",
+   "question_ids": [
+    "37076",
+    "37084"
+   ],
+   "image_files": [
+    "documents/mxfw0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mybv0228",
+   "question_ids": [
+    "49542",
+    "49546"
+   ],
+   "image_files": [
+    "documents/mybv0228_13.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-mzbx0227",
+   "question_ids": [
+    "59650",
+    "59657"
+   ],
+   "image_files": [
+    "documents/mzbx0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nfdl0227",
+   "question_ids": [
+    "59263",
+    "59264"
+   ],
+   "image_files": [
+    "documents/nfdl0227_6.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nfnw0228",
+   "question_ids": [
+    "56446",
+    "56447"
+   ],
+   "image_files": [
+    "documents/nfnw0228_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ngph0227",
+   "question_ids": [
+    "3132",
+    "3156"
+   ],
+   "image_files": [
+    "documents/ngph0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nhpj0226",
+   "question_ids": [
+    "867",
+    "869"
+   ],
+   "image_files": [
+    "documents/nhpj0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-npvg0227",
+   "question_ids": [
+    "65201",
+    "65202"
+   ],
+   "image_files": [
+    "documents/npvg0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nqnn0081",
+   "question_ids": [
+    "56604",
+    "56606"
+   ],
+   "image_files": [
+    "documents/nqnn0081_33.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nrjw0227",
+   "question_ids": [
+    "62334",
+    "62336"
+   ],
+   "image_files": [
+    "documents/nrjw0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nxnw0228",
+   "question_ids": [
+    "50776",
+    "50778"
+   ],
+   "image_files": [
+    "documents/nxnw0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nynn0081",
+   "question_ids": [
+    "56541",
+    "56552"
+   ],
+   "image_files": [
+    "documents/nynn0081_8.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nzcd0227",
+   "question_ids": [
+    "60747",
+    "60749"
+   ],
+   "image_files": [
+    "documents/nzcd0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nznm0227",
+   "question_ids": [
+    "47069",
+    "47874"
+   ],
+   "image_files": [
+    "documents/nznm0227_122.png",
+    "documents/nznm0227_96.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-nzwm0227",
+   "question_ids": [
+    "58826",
+    "58827"
+   ],
+   "image_files": [
+    "documents/nzwm0227_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-phhx0023",
+   "question_ids": [
+    "54315",
+    "54321"
+   ],
+   "image_files": [
+    "documents/phhx0023_6.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-phxj0037",
+   "question_ids": [
+    "384",
+    "385"
+   ],
+   "image_files": [
+    "documents/phxj0037_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ppnf0023",
+   "question_ids": [
+    "9605"
+   ],
+   "image_files": [
+    "documents/ppnf0023_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-prbn0226",
+   "question_ids": [
+    "51085",
+    "51092"
+   ],
+   "image_files": [
+    "documents/prbn0226_16.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ptkg0227",
+   "question_ids": [
+    "64178",
+    "64192"
+   ],
+   "image_files": [
+    "documents/ptkg0227_32.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-pxlg0227",
+   "question_ids": [
+    "65152",
+    "65153"
+   ],
+   "image_files": [
+    "documents/pxlg0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-pybn0226",
+   "question_ids": [
+    "51243",
+    "51478"
+   ],
+   "image_files": [
+    "documents/pybn0226_1.png",
+    "documents/pybn0226_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-pygf0227",
+   "question_ids": [
+    "61268",
+    "61270"
+   ],
+   "image_files": [
+    "documents/pygf0227_4.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-pyyc0227",
+   "question_ids": [
+    "47011",
+    "63318"
+   ],
+   "image_files": [
+    "documents/pyyc0227_10.png",
+    "documents/pyyc0227_52.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qffn0226",
+   "question_ids": [
+    "44773",
+    "44779"
+   ],
+   "image_files": [
+    "documents/qffn0226_105.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qjgn0226",
+   "question_ids": [
+    "41728",
+    "46446"
+   ],
+   "image_files": [
+    "documents/qjgn0226_131.png",
+    "documents/qjgn0226_201.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qjvj0224",
+   "question_ids": [
+    "4461",
+    "4471"
+   ],
+   "image_files": [
+    "documents/qjvj0224_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qlhv0228",
+   "question_ids": [
+    "51323",
+    "51324"
+   ],
+   "image_files": [
+    "documents/qlhv0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qnbx0223",
+   "question_ids": [
+    "15117",
+    "15277"
+   ],
+   "image_files": [
+    "documents/qnbx0223_27.png",
+    "documents/qnbx0223_43.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qncj0037",
+   "question_ids": [
+    "52180",
+    "52183"
+   ],
+   "image_files": [
+    "documents/qncj0037_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qncj0227",
+   "question_ids": [
+    "59423",
+    "59428"
+   ],
+   "image_files": [
+    "documents/qncj0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qnph0078",
+   "question_ids": [
+    "18866",
+    "18875"
+   ],
+   "image_files": [
+    "documents/qnph0078_25.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qnyg0227",
+   "question_ids": [
+    "64830",
+    "64832"
+   ],
+   "image_files": [
+    "documents/qnyg0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qpbf0227",
+   "question_ids": [
+    "63767",
+    "63769"
+   ],
+   "image_files": [
+    "documents/qpbf0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qplp0000",
+   "question_ids": [
+    "52522",
+    "52533"
+   ],
+   "image_files": [
+    "documents/qplp0000_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qrmg0227",
+   "question_ids": [
+    "30437",
+    "30444"
+   ],
+   "image_files": [
+    "documents/qrmg0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qscd0227",
+   "question_ids": [
+    "30185"
+   ],
+   "image_files": [
+    "documents/qscd0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qtyp0227",
+   "question_ids": [
+    "49121",
+    "49125"
+   ],
+   "image_files": [
+    "documents/qtyp0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qymj0226",
+   "question_ids": [
+    "4952",
+    "4954"
+   ],
+   "image_files": [
+    "documents/qymj0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-qzgf0227",
+   "question_ids": [
+    "64928",
+    "64930"
+   ],
+   "image_files": [
+    "documents/qzgf0227_19.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rfgb0228",
+   "question_ids": [
+    "50868",
+    "50869"
+   ],
+   "image_files": [
+    "documents/rfgb0228_13.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rgcw0217",
+   "question_ids": [
+    "16832",
+    "16990"
+   ],
+   "image_files": [
+    "documents/rgcw0217_2.png",
+    "documents/rgcw0217_7.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rkbd0228",
+   "question_ids": [
+    "56839",
+    "56842"
+   ],
+   "image_files": [
+    "documents/rkbd0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rkgg0227",
+   "question_ids": [
+    "60482",
+    "60490"
+   ],
+   "image_files": [
+    "documents/rkgg0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rrcw0217",
+   "question_ids": [
+    "46274",
+    "60467"
+   ],
+   "image_files": [
+    "documents/rrcw0217_2.png",
+    "documents/rrcw0217_4.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rslk0226",
+   "question_ids": [
+    "51779"
+   ],
+   "image_files": [
+    "documents/rslk0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rswg0227",
+   "question_ids": [
+    "26430",
+    "26431"
+   ],
+   "image_files": [
+    "documents/rswg0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rxwd0228",
+   "question_ids": [
+    "32207",
+    "32211"
+   ],
+   "image_files": [
+    "documents/rxwd0228_19.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ryvw0217",
+   "question_ids": [
+    "45800",
+    "45801"
+   ],
+   "image_files": [
+    "documents/ryvw0217_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-rzyj0226",
+   "question_ids": [
+    "809",
+    "815"
+   ],
+   "image_files": [
+    "documents/rzyj0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-sfmb0228",
+   "question_ids": [
+    "49577",
+    "49629"
+   ],
+   "image_files": [
+    "documents/sfmb0228_79.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-sgmw0227",
+   "question_ids": [
+    "60965",
+    "60970"
+   ],
+   "image_files": [
+    "documents/sgmw0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-slmg0227",
+   "question_ids": [
+    "65384",
+    "65385"
+   ],
+   "image_files": [
+    "documents/slmg0227_14.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-snbx0223",
+   "question_ids": [
+    "57409",
+    "57533"
+   ],
+   "image_files": [
+    "documents/snbx0223_4.png",
+    "documents/snbx0223_7.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-sncj0037",
+   "question_ids": [
+    "362",
+    "363"
+   ],
+   "image_files": [
+    "documents/sncj0037_3.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-snkw0227",
+   "question_ids": [
+    "63283",
+    "63293"
+   ],
+   "image_files": [
+    "documents/snkw0227_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-spnf0227",
+   "question_ids": [
+    "64761",
+    "64762"
+   ],
+   "image_files": [
+    "documents/spnf0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-sqww0228",
+   "question_ids": [
+    "51536"
+   ],
+   "image_files": [
+    "documents/sqww0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-srwn0081",
+   "question_ids": [
+    "59347",
+    "59349"
+   ],
+   "image_files": [
+    "documents/srwn0081_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-syjk0226",
+   "question_ids": [
+    "51554",
+    "51556"
+   ],
+   "image_files": [
+    "documents/syjk0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-sznk0226",
+   "question_ids": [
+    "60106",
+    "60109"
+   ],
+   "image_files": [
+    "documents/sznk0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-thhb0228",
+   "question_ids": [
+    "51356",
+    "51359"
+   ],
+   "image_files": [
+    "documents/thhb0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-thmg0023",
+   "question_ids": [
+    "9962",
+    "9964"
+   ],
+   "image_files": [
+    "documents/thmg0023_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-tjpg0227",
+   "question_ids": [
+    "37338",
+    "65230"
+   ],
+   "image_files": [
+    "documents/tjpg0227_6.png",
+    "documents/tjpg0227_9.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-tkgj0224",
+   "question_ids": [
+    "5982",
+    "5984"
+   ],
+   "image_files": [
+    "documents/tkgj0224_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-tkmk0226",
+   "question_ids": [
+    "51687",
+    "51694"
+   ],
+   "image_files": [
+    "documents/tkmk0226_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-tnfg0023",
+   "question_ids": [
+    "53989",
+    "53993"
+   ],
+   "image_files": [
+    "documents/tnfg0023_8.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-txvw0217",
+   "question_ids": [
+    "57900",
+    "57904"
+   ],
+   "image_files": [
+    "documents/txvw0217_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xgcb0228",
+   "question_ids": [
+    "51327",
+    "51329"
+   ],
+   "image_files": [
+    "documents/xgcb0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xjfd0228",
+   "question_ids": [
+    "62768",
+    "63015"
+   ],
+   "image_files": [
+    "documents/xjfd0228_6.png",
+    "documents/xjfd0228_8.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xjhk0226",
+   "question_ids": [
+    "24116",
+    "24119"
+   ],
+   "image_files": [
+    "documents/xjhk0226_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xtkg0227",
+   "question_ids": [
+    "64157",
+    "64158"
+   ],
+   "image_files": [
+    "documents/xtkg0227_11.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xtvn0020",
+   "question_ids": [
+    "8125",
+    "8126"
+   ],
+   "image_files": [
+    "documents/xtvn0020_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xywk0226",
+   "question_ids": [
+    "60004",
+    "60010"
+   ],
+   "image_files": [
+    "documents/xywk0226_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-xzmy0225",
+   "question_ids": [
+    "4917",
+    "4918"
+   ],
+   "image_files": [
+    "documents/xzmy0225_12.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yfkp0000",
+   "question_ids": [
+    "6845",
+    "6855"
+   ],
+   "image_files": [
+    "documents/yfkp0000_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ygbf0227",
+   "question_ids": [
+    "37356",
+    "37367"
+   ],
+   "image_files": [
+    "documents/ygbf0227_2.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yhdw0217",
+   "question_ids": [
+    "45802",
+    "59692"
+   ],
+   "image_files": [
+    "documents/yhdw0217_13.png",
+    "documents/yhdw0217_15.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yhmw0227",
+   "question_ids": [
+    "60973",
+    "60975"
+   ],
+   "image_files": [
+    "documents/yhmw0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yjgx0227",
+   "question_ids": [
+    "59623",
+    "59626"
+   ],
+   "image_files": [
+    "documents/yjgx0227_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ykdv0228",
+   "question_ids": [
+    "62843",
+    "62846"
+   ],
+   "image_files": [
+    "documents/ykdv0228_15.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ylvj0223",
+   "question_ids": [
+    "57374",
+    "57388"
+   ],
+   "image_files": [
+    "documents/ylvj0223_21.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yqjv0001",
+   "question_ids": [
+    "52483",
+    "52484"
+   ],
+   "image_files": [
+    "documents/yqjv0001_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yrgj0223",
+   "question_ids": [
+    "15189"
+   ],
+   "image_files": [
+    "documents/yrgj0223_33.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-yrmp0227",
+   "question_ids": [
+    "47548",
+    "47552"
+   ],
+   "image_files": [
+    "documents/yrmp0227_11.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ysbw0217",
+   "question_ids": [
+    "46309",
+    "46457"
+   ],
+   "image_files": [
+    "documents/ysbw0217_3.png",
+    "documents/ysbw0217_5.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-zqhm0227",
+   "question_ids": [
+    "48164",
+    "48171"
+   ],
+   "image_files": [
+    "documents/zqhm0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-zrhm0227",
+   "question_ids": [
+    "51816",
+    "51818"
+   ],
+   "image_files": [
+    "documents/zrhm0227_25.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ztbm0227",
+   "question_ids": [
+    "59816",
+    "59841"
+   ],
+   "image_files": [
+    "documents/ztbm0227_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-ztmb0228",
+   "question_ids": [
+    "49113",
+    "49115"
+   ],
+   "image_files": [
+    "documents/ztmb0228_1.png"
+   ]
+  },
+  {
+   "unit_id": "docvqa-document-zxjd0228",
+   "question_ids": [
+    "29760",
+    "29763"
+   ],
+   "image_files": [
+    "documents/zxjd0228_9.png"
+   ]
+  }
+ ],
+ "importer_sha256": "3b41b7c82fb52a66369075c17a0b425c45d9a1f5cf7e5fac2833223716d4d284",
+ "content": "ids, counts and sha256s only: no question text, answers or URLs",
+ "input": {
+  "sha256": "2bbf447a9b187ef65c76ea8d08d6d941c5a938f2de4bc89da33f9925a8b41a9d"
+ }
+}

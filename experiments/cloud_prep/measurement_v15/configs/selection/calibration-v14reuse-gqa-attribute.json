@@ -1,0 +1,504 @@
+{
+ "schema": "followup-benchmark-selection-plan-v15",
+ "mode": "v14_reuse",
+ "benchmark": "gqa",
+ "task": "gqa_attribute",
+ "split": "calibration",
+ "material_set": "calibration-v14reuse-gqa_attribute",
+ "seed": 20261029,
+ "calibration_fraction": null,
+ "max_units": 48,
+ "max_questions_per_unit": 2,
+ "rule": "pool: sha256('seed|split|benchmark|unit_id') first 15 hex / 16**15 < calibration_fraction -> calibration, else evaluation; units: ascending sha256('seed|unit|task|unit_id'); questions: ascending sha256('seed|question|task|question_id')",
+ "input_dataset_header": {},
+ "exclusions": [],
+ "counts": {
+  "eligible_questions": 465,
+  "eligible_units": 256,
+  "pool_units": 256,
+  "other_pool_units": 0,
+  "selected_units": 48,
+  "remaining_pool_units": 208,
+  "selected_questions": 87,
+  "selected_images": 48,
+  "dropped": {}
+ },
+ "units": [
+  {
+   "unit_id": "gqa-image-1591803",
+   "question_ids": [
+    "181643",
+    "181656"
+   ],
+   "image_files": [
+    "images/71824be23bf64a3d251e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2316747",
+   "question_ids": [
+    "11207554",
+    "11207697"
+   ],
+   "image_files": [
+    "images/e89e48a8b65f37c154de-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2318396",
+   "question_ids": [
+    "02995771",
+    "02995942"
+   ],
+   "image_files": [
+    "images/c8ddb2207ae1b929238e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2319126",
+   "question_ids": [
+    "00681371",
+    "00681398"
+   ],
+   "image_files": [
+    "images/51559dd57e350c77c2b7-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2320089",
+   "question_ids": [
+    "02504641",
+    "02504724"
+   ],
+   "image_files": [
+    "images/f6a6e584e5360fe389e5-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2323165",
+   "question_ids": [
+    "13862678",
+    "13862685"
+   ],
+   "image_files": [
+    "images/ed52265e272d5a999b40-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2325735",
+   "question_ids": [
+    "04986212",
+    "04986227"
+   ],
+   "image_files": [
+    "images/efc68df3e4a97976de6e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2325849",
+   "question_ids": [
+    "0111374",
+    "0111479"
+   ],
+   "image_files": [
+    "images/732f47f95339ea964809-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2332925",
+   "question_ids": [
+    "19616107"
+   ],
+   "image_files": [
+    "images/f5461749b6e8eba86a34-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2333723",
+   "question_ids": [
+    "07806919",
+    "07806922"
+   ],
+   "image_files": [
+    "images/73c461c289d1fed89080-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2339651",
+   "question_ids": [
+    "00106331",
+    "00106409"
+   ],
+   "image_files": [
+    "images/59582d65f1fa52959c88-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2343656",
+   "question_ids": [
+    "04856219",
+    "04856244"
+   ],
+   "image_files": [
+    "images/4c98466d338b8bdaf37e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2343793",
+   "question_ids": [
+    "00958118",
+    "00958168"
+   ],
+   "image_files": [
+    "images/e15936a5fb735a5417d4-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2347986",
+   "question_ids": [
+    "13410941",
+    "13410951"
+   ],
+   "image_files": [
+    "images/6bbcd5b396d8dadaa797-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2351098",
+   "question_ids": [
+    "00543621",
+    "00543811"
+   ],
+   "image_files": [
+    "images/b569cce42a8f2d2162ce-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2353209",
+   "question_ids": [
+    "07149658",
+    "07149682"
+   ],
+   "image_files": [
+    "images/da4f2be2f2c8926481bf-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2356933",
+   "question_ids": [
+    "18782434",
+    "18782471"
+   ],
+   "image_files": [
+    "images/ab2f0cdf1e952d6b5090-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2358541",
+   "question_ids": [
+    "07817664",
+    "07817845"
+   ],
+   "image_files": [
+    "images/5581708ee6acf4fef764-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2358836",
+   "question_ids": [
+    "06493530",
+    "06493580"
+   ],
+   "image_files": [
+    "images/6c35565282dba756dfd3-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2359553",
+   "question_ids": [
+    "07846586",
+    "07846642"
+   ],
+   "image_files": [
+    "images/24da7988cf81e691a153-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2360862",
+   "question_ids": [
+    "10857731",
+    "10857746"
+   ],
+   "image_files": [
+    "images/b2b17f4002cb8fcb8da7-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2361389",
+   "question_ids": [
+    "1128137"
+   ],
+   "image_files": [
+    "images/2ef0d71f2b56d8bc8d2e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2363293",
+   "question_ids": [
+    "01155799"
+   ],
+   "image_files": [
+    "images/8ccec912cf5504b76aea-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2363917",
+   "question_ids": [
+    "07523480"
+   ],
+   "image_files": [
+    "images/7d7a97f37528f95eec68-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2364826",
+   "question_ids": [
+    "08655747",
+    "08655857"
+   ],
+   "image_files": [
+    "images/e3efae2aa79975d2739a-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2365498",
+   "question_ids": [
+    "13441927",
+    "13442056"
+   ],
+   "image_files": [
+    "images/1d14ae18be2256204995-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2365727",
+   "question_ids": [
+    "11850398",
+    "11850453"
+   ],
+   "image_files": [
+    "images/2fd16178548bde92377f-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2366277",
+   "question_ids": [
+    "091020599",
+    "091020604"
+   ],
+   "image_files": [
+    "images/1a248d31f1815faf1655-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2371946",
+   "question_ids": [
+    "17444813"
+   ],
+   "image_files": [
+    "images/f367e1b175f9f4ab69eb-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2373797",
+   "question_ids": [
+    "11941496",
+    "11941706"
+   ],
+   "image_files": [
+    "images/6d136b69072c8eb6bb05-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2374264",
+   "question_ids": [
+    "16267630",
+    "16267639"
+   ],
+   "image_files": [
+    "images/fb993a096bcb13e829e3-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2374606",
+   "question_ids": [
+    "121052675"
+   ],
+   "image_files": [
+    "images/c7350f7fca832a3de854-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2374943",
+   "question_ids": [
+    "187864"
+   ],
+   "image_files": [
+    "images/0b70713d68f98ed07be7-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2376851",
+   "question_ids": [
+    "01361636",
+    "01361665"
+   ],
+   "image_files": [
+    "images/7b9bdd5de858e856eab0-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2380375",
+   "question_ids": [
+    "12755353",
+    "12755586"
+   ],
+   "image_files": [
+    "images/726b846190fe28fbc7bb-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2380477",
+   "question_ids": [
+    "0727660",
+    "0727676"
+   ],
+   "image_files": [
+    "images/d9daa0ca1cadc54d0234-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2381632",
+   "question_ids": [
+    "03301274",
+    "03301290"
+   ],
+   "image_files": [
+    "images/9df5a1d6cf00a54e5a7e-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2390938",
+   "question_ids": [
+    "15126997",
+    "15127141"
+   ],
+   "image_files": [
+    "images/f67a79e60bcafc62c80c-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2394870",
+   "question_ids": [
+    "07933059",
+    "07933102"
+   ],
+   "image_files": [
+    "images/33168b476471ea0d79be-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2400480",
+   "question_ids": [
+    "0643727"
+   ],
+   "image_files": [
+    "images/e309bf79f15084501d38-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2403107",
+   "question_ids": [
+    "17889777",
+    "17890078"
+   ],
+   "image_files": [
+    "images/0bf492d6f7e07abcbab7-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2403341",
+   "question_ids": [
+    "16297855",
+    "16297893"
+   ],
+   "image_files": [
+    "images/12c54d17ac49e954b02c-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2406525",
+   "question_ids": [
+    "00856617"
+   ],
+   "image_files": [
+    "images/da69dd7aace50ced1cef-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2408539",
+   "question_ids": [
+    "00435674",
+    "00435749"
+   ],
+   "image_files": [
+    "images/056aea91367f426c3ad1-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2410613",
+   "question_ids": [
+    "18934660",
+    "18934678"
+   ],
+   "image_files": [
+    "images/0f31259d1f09180da233-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2411519",
+   "question_ids": [
+    "00272996",
+    "00273061"
+   ],
+   "image_files": [
+    "images/a91fcbed53ecad9fcac3-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-2491",
+   "question_ids": [
+    "04992420",
+    "04992432"
+   ],
+   "image_files": [
+    "images/8e5be955da6c2f03c664-clean.png"
+   ]
+  },
+  {
+   "unit_id": "gqa-image-714",
+   "question_ids": [
+    "05845466",
+    "05845494"
+   ],
+   "image_files": [
+    "images/592ff9b26fc6f33ad8bf-clean.png"
+   ]
+  }
+ ],
+ "importer_sha256": "3b41b7c82fb52a66369075c17a0b425c45d9a1f5cf7e5fac2833223716d4d284",
+ "content": "ids, counts and sha256s only: no question text, answers or URLs",
+ "input": {
+  "sha256": "55d4b7686d02a7463e7f187089915c6a7821c8b2a336e733629ac787a6e474b8"
+ }
+}

@@ -1,0 +1,25 @@
+\begin{table*}[tp]
+\centering\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Intervention specification of each experiment family. $a/b$: sources differing only in the edited object's attribute; C/D: clean/degraded versions of $a$. ROI: visual tokens overlapping the edited object's box, one index set at every changed entry (DeepStack: one set per crop group); ``all'': every visual position. Readouts D/I/C: direct, identity-label, cyclic-label; kinds S/G: candidate score and greedy generation. In both quality experiments the conflict $a$ endpoint is the same visual input as recovery cell CC (clean main) or DC (degraded main), and conflict cells never degrade later input.}
+\label{tab:intervention_spec}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}p{1.6cm}>{\raggedright\arraybackslash}p{1.8cm}@{}}
+\toprule
+\rowcolor{DSTableHeader}
+Family (estimands) & Source identity & Entries intervened & Spatial scope & Dose / multiplier & Readouts, kinds & Unit \\
+\midrule
+Photo conflict ($R$, $\Delta R$) & $a/b$: referent recolored red/blue, clean; unchanged entry and non-ROI tokens show the original or mirrored photo at $\alpha\in\{1,.08\}$, edited object in its native color & main alone, or all native later (Qwen 3, Granite 7, DeepStack 4) & ROI, fixed donor box (Qwen: median 6\% of tokens) & raw $k\in\{0,1\}$; at $M0$, $\alpha{=}1$ also RSS/L1 opposite-native $k$ & D/I/C; S+G & photograph (64) \\
+Local transfer ($I$, $I_{\main}-I_{\later}$) & donors $a/b$ ($M0$, $\alpha{=}1$), clean, over the source-$a$ scene at $M0/M1$, $\alpha\in\{1,.08\}$ & main alone, or all native later & ROI at the original or opposite half; features and mask move together & raw replacement & D/I/C; S+G & scene or template (64) \\
+Whole source ($D_{\mathrm{fixed}}$, $J$) & main and later each $a$ or $b$ (four assignments), clean; four layout pairs; $\alpha{=}1$ & main and all later, jointly & all & raw & D/I/C; S+G; target query only & template (64) \\
+Synthetic dose (matched $\Delta R$) & changed entry $a\rightarrow b$; other entry fixed to $a$ or $b$; $M0/M0$, $\alpha{=}1$ & main alone, or all native later & all & raw $k\in\{0,1\}$; RSS/L1 opposite-native $k$ & D/I/C; S+G & template (32) \\
+Groups ($R_G$, $C$, $G$, $H$) & common $B$: donor-$a$ ROI at every entry over the source-$a$ scene ($M0/M1$, $\alpha\in\{1,.08\}$); the selected group moves toward clean $b$ & singletons, pairs or triples, all later & ROI & raw $k{=}1$; common-low RSS/L1 & D/I/C; S+G & template (32) \\
+Granite marginal ($M_{21\mid15,18}$) & main and later base clean $a$; donor clean $b$ (fixed-contrast templates) & entry 21 added to fixed $\{15,18\}$ & ROI & $k{=}1$ & D/I/C; S+G & template (32) \\
+Fixed-contrast conflict ($R_{\later}(C)$, $R_{\later}(D)$, $I_{\mathrm{quality}}$) & main: C or D (contrast .12) of $a$; later: clean $a$ with ROI replaced by clean $b$ at $k{=}1$ & all native later & ROI; non-ROI later tokens stay clean $a$ & $k_e{=}1$ (exact replacement) & D/I/C; S+G & template (32 per task); photograph (64) \\
+Fixed-contrast recovery ($A_{uv}$, $G_D$, $I_{\mathrm{rec}}$) & one image $a$, C or D separately at main and later; no $b$; D: contrast .12 (synthetic, photos) or blur radius 2 (GQA, DocVQA) & main and all later, as whole inputs & all & none & D/I/C accuracy (S, G); free-form GQA exact, DocVQA ANLS & template (32 per task); photograph (64); GQA image (256 per group); document (256) \\
+Calibrated conflict (as fixed-contrast) & as fixed-contrast; D is a calibrated level (desaturation, relative blur, lower resolution) & all native later (DeepStack: 2 active groups) & ROI (median 19--26\% of later tokens); non-ROI later tokens stay clean $a$ & $k{=}1$ & D/I/C; S+G & template (32 per task); synthetic only \\
+Calibrated recovery (as fixed-contrast) & as fixed-contrast at each calibrated level; CC shared across levels & main and all later, as whole inputs & all & none & D/I/C accuracy (S, G); free-form GQA exact, DocVQA ANLS & template (32 per task); GQA image (192 per group); document (192) \\
+Removal and coding (accuracy, bytes; Appendix~H) & one image $a$, no $b$; each entry unchanged, zeros, calibration mean, or coded and decoded by NNCodec & main, all native later, or both; each entry tensor separately & all & none; one QP per entry & accuracy (G); free-form GQA exact, DocVQA ANLS & GQA image (1,000; Granite 468 and 531); document (474) \\
+\bottomrule
+\end{tabularx}
+\end{table*}

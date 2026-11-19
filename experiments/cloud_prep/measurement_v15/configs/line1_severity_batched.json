@@ -1,0 +1,43 @@
+{
+  "execution_version": "v15-line1-severity-batched-1",
+  "families": [
+    "conflict",
+    "recovery"
+  ],
+  "k": 1.0,
+  "region": "roi",
+  "generate_tokens": 32,
+  "severity_labels": {
+    "color": [
+      "desat-c0.2",
+      "desat-c0.1",
+      "desat-c0.05"
+    ],
+    "stripe_orientation": [
+      "blurrel-period0.37",
+      "blurrel-period0.4",
+      "blurrel-period0.43"
+    ],
+    "relative_position": [
+      "blurrel-dotsep0.1",
+      "blurrel-dotsep0.2",
+      "blurrel-dotsep0.3"
+    ],
+    "text_reading": [
+      "lowres-font4",
+      "lowres-font3",
+      "lowres-font2.5"
+    ]
+  },
+  "recovery_cells": "four_cell",
+  "main_sources": {
+    "normal": "a"
+  },
+  "recovery_sources": {
+    "clean": "a"
+  },
+  "severity_sources": "row",
+  "batch_conditions": true,
+  "cross_query_cache": true,
+  "max_batch": 8
+}

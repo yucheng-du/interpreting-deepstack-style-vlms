@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "model": {
+    "id": "Qwen/Qwen3-VL-4B-Instruct",
+    "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "class": "Qwen3VLForConditionalGeneration",
+    "total_parameters": 4437815808
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "dtype": "bfloat16",
+    "attn_implementation": "sdpa",
+    "seed": 20260926
+  },
+  "processor": {
+    "kind": "qwen",
+    "min_pixels": 4096,
+    "max_pixels": 262144,
+    "use_fast": false
+  },
+  "prompt": {
+    "chat_template_kwargs": {},
+    "suffix": ""
+  },
+  "generation": {
+    "enabled": false,
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "num_beams": 1,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "use_cache": true
+  },
+  "parsing": {
+    "strategy": "strict_final"
+  },
+  "intervention": {
+    "kind": "qwen_deepstack"
+  },
+  "conditions": [
+    "111",
+    "110",
+    "101",
+    "011",
+    "100",
+    "010",
+    "001",
+    "000"
+  ],
+  "selection": {
+    "offset": 0,
+    "limit": 2,
+    "ids": [
+      "val_Relative_Depth_27",
+      "val_Art_Style_84"
+    ]
+  },
+  "scoring": {
+    "max_sequence": 2048
+  },
+  "validation": {
+    "score_atol": 0.001,
+    "audit_items": 2
+  },
+  "protocol_revision": "20261003-cuda-bridge-v1"
+}

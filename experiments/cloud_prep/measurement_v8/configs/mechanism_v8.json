@@ -1,0 +1,22 @@
+{
+  "strengths": [
+    0,
+    8
+  ],
+  "response_formats": [
+    "label",
+    "direct"
+  ],
+  "generation_groups": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "generate_native": true,
+  "generate_strengths": [
+    0,
+    8
+  ],
+  "self_patch": true
+}

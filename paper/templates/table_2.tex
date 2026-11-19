@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{On photographs, answers follow the later entries in DeepStack and the main entry in Qwen3-VL.} Generation selectivity is $R=E_{\mathrm{target}}-E_{\mathrm{control}}$; positive $\Delta R$ means larger relative selectivity at main. Conditions are $M0$, $\alpha=1$, direct answers, and raw $k=1$. Cells are means [descriptive normal 95\% intervals]. Each estimate uses $n$ complete photographs out of 64. Main is one entry; later contains three entries for the Qwen lineage, seven for Granite, and four for DeepStack on these images. Shaded: models used in Sections~5.3--5.5.}
+\label{tab:natural}
+\begingroup
+\fontsize{9}{10.5}\selectfont
+\setlength{\tabcolsep}{2.8pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\linewidth}{@{}l*{3}{>{\centering\arraybackslash}Xr}@{}}
+\toprule
+& \multicolumn{2}{c}{Main} & \multicolumn{2}{c}{All later entries} & \multicolumn{2}{c}{Paired difference} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(l){6-7}
+\rowcolor{DSTableHeader}
+Checkpoint & $R_{\mathrm{main}}$ [95\% interval] & $n$ & $R_{\mathrm{later}}$ [95\% interval] & $n$ & $\Delta R$ [95\% interval] & $n$ \\
+\midrule
+@@ROWS@@
+\bottomrule
+\end{tabularx}
+\endgroup
+\end{table*}

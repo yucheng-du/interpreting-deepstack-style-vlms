@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering\footnotesize
+\setlength{\tabcolsep}{7pt}
+\caption{\textbf{Qwen32's stripe composition residual reverses sign with layout.} Raw composition residual $C$ with direct answers. Each value is a paired template-level estimate over 32 complete templates, with a descriptive normal 95\% interval.}
+\begin{tabular}{@{}lcllr@{}}
+\toprule
+\rowcolor{DSTableHeader}
+Layout & $\alpha$ & Score $C$ [95\% interval] & Generation $C$ [95\% interval] & $n$ \\
+\midrule
+@@ROWS@@
+\bottomrule
+\end{tabular}
+\label{tab:composition}
+\end{table*}

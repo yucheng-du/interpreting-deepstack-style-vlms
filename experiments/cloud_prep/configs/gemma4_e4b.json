@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "model": {
+    "id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "class": "Gemma4ForConditionalGeneration",
+    "total_parameters": 7996156490
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "dtype": "bfloat16",
+    "attn_implementation": "eager",
+    "seed": 20260928
+  },
+  "processor": {
+    "kind": "gemma4",
+    "max_soft_tokens": 140,
+    "backend": "pil"
+  },
+  "prompt": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "suffix": ""
+  },
+  "generation": {
+    "enabled": true,
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "num_beams": 1,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "use_cache": true
+  },
+  "parsing": {
+    "strategy": "strict_final"
+  },
+  "intervention": {
+    "kind": "gemma_ple",
+    "layer_groups": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    ]
+  },
+  "conditions": [
+    "111",
+    "000"
+  ],
+  "selection": {
+    "offset": 0,
+    "limit": 2,
+    "ids": []
+  },
+  "scoring": {
+    "max_sequence": 4096
+  },
+  "validation": {
+    "score_atol": 0.001,
+    "audit_items": 1
+  }
+}

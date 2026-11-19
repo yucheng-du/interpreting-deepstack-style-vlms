@@ -1,0 +1,42 @@
+{
+  "execution_version": "v15-benchmark-recovery-severity-batched-1",
+  "families": [
+    "recovery"
+  ],
+  "readouts": [
+    {
+      "response_format": "freeform",
+      "mapping": "none"
+    }
+  ],
+  "generate_tokens": 64,
+  "severity_labels": {
+    "gqa_attribute": [
+      "lowres-long28",
+      "lowres-long10",
+      "lowres-long5"
+    ],
+    "gqa_spatial": [
+      "lowres-long20",
+      "lowres-long14",
+      "lowres-long10",
+      "lowres-long5"
+    ],
+    "docvqa_document_qa": [
+      "lowres-long360",
+      "lowres-long256",
+      "lowres-long180"
+    ]
+  },
+  "recovery_cells": "four_cell",
+  "main_sources": {
+    "normal": "a"
+  },
+  "recovery_sources": {
+    "clean": "a"
+  },
+  "severity_sources": "row",
+  "batch_conditions": true,
+  "cross_query_cache": true,
+  "max_batch": 8
+}

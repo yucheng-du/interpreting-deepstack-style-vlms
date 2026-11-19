@@ -1,0 +1,9 @@
+{
+  "execution_version": "v14-line1-batched-1",
+  "families": ["conflict", "recovery"],
+  "k": 1.0,
+  "region": "roi",
+  "generate_tokens": 32,
+  "batch_conditions": true,
+  "cross_query_cache": true
+}
